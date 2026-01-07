@@ -1,0 +1,97 @@
+{
+  "slug": "hospital-ward-management-system",
+  "isdraft": "false",
+  "company": "Life Heathcare and Dariel",
+  "title": "Hospital Ward Management System",
+  "url": "https://www.helloriley-portfolio.github.io/project/hospital-ward-management-system",
+  "link": "/project/hospital-ward-management-system",
+  "featureimg": "/images/hospital-ward-ward-chart-1375x770.jpg",
+  "datecompleted": "2015-02-15",
+  "challengetitle": "Redefining Hospital Ward Management",
+  "challenge": "Nurses and Hospital Administration struggled with inefficient patient treatment and tracking systems, impacting care quality and billing accuracy and turnaround in high-pressure ward environments.",
+  "role": "Frontend Engineer & UI/UX Designer",
+  "technologies": "C#, WPF, XAML, Git, Multitouch integration",
+  "banner":
+  {
+    "bullets": 
+    [
+      "Nurses found the new system easy to use during busy shifts",
+      "The hospital and nurses were able to track treatment charges effectively",
+      "The new system streamlined complex medical workflows for 24/7 ward operations"
+    ],
+    "src" : "/images/hospital-ward-banner-1200x700.png",
+    "alt" : "Hospital Ward Management System",
+    "backgroundcolor": "bg-gradient-to-t from-blue-50 to-blue-50/20",
+    "bulletcolor": "#2196f3"
+  },
+  "solutions": [
+    {
+      "title": "Multitouch Interface Design",
+      "tag": "Solution 1",
+      "link": "solution1",
+      "problem": "Complex and inefficient patient care tracking slowing down nurses and impacting billing - missing charges and turnaround time.",
+      "solution": "Touch-optimized drag-n-drop interface with visual treatment cards.",
+      "solutionbullets": 
+      [
+        "Provide treatment cards that can be easily dragged and dropped onto patient charts",
+        "Display key patient information at a glance to have on hand during busy ward shifts",
+        "Intuitive grouping of data and actions to minimize cognitive load for nurses"
+      ],
+      "impact": "",
+      "impactbullets": 
+      [
+        "Nurses found new system easy and fun to use. The drag-n-drop interface reduced training time and cognitive load during busy shifts.",
+        "Improved tracking treatment charges effectively. The correct treatment and additional charges now accounted for in billing.",
+        "The new system streamlined complex medical workflows for 24/7 ward operations and improved hospital billing turnaround time."
+      ],
+      "gallery": 
+      [
+        {
+          "src": "/images/hospital-ward-ward-chart-1375x770.jpg",
+          "alt": "Designed and implemented Hospital Ward Management System",
+          "caption": "New Ward Chart touch screen showing optimised navigation and clean layout. UI designed for touch interaction. Core Patient Details displayed at the top. Categorised treatment tabs with relevant template cards and treatment grid below."
+        },
+        {
+          "src": "/images/hospital-ward-management-ward-chart-confirmation-1368x770.jpg",
+          "alt": "Designed and implemented Hospital Ward Management System",
+          "caption": "New Ward Chart Confirmation modal to reduce accidental treatment assignments"
+        }
+      ]
+    },
+    {
+      "title": "Information Prioritization & Workflow Optimization",
+      "tag": "Solution 2",
+      "link": "solution2",
+      "problem": "Critical patient data buried in multiple screens. Observed nurse workflows, identified pain points.",
+      "solution": "Redesigned patient details screen to align with Ward Management and improve the usability of the screen.",
+      "solutionbullets": 
+      [
+        "Redesign Patient details screen to prioritise key information and actions",
+        "Group related information and actions together for easier access",
+        "Used visual hierarchy to guide nurses' attention to the most critical data"
+      ],
+      "impact": "",
+      "impactbullets": 
+      [
+        "Faster decision-making in time-critical situations",
+        "Simplified complex medical workflows for 24/7 ward operations",
+        "Nurses could access critical patient information quickly and efficiently",
+        "Patient details are immediately available, at-a-glance, and show allergies, risks, acuity and treating doctor. Actions are easy to find."
+      ],
+      "gallery": 
+      [
+        {
+          "src": "/images/hospital-ward-management-patient-details-new-1371x770.jpg",
+          "alt": "Hospital Ward Management System",
+          "caption": "Redesigned and optimised the Patient details screen to be cleaner and more simple to use, with key information prioritised and easy access to common actions."
+        },
+        {
+          "src": "/images/hospital-ward-management-patient-details-old-1350x770.jpg",
+          "alt": "Hospital Ward Management System",
+          "caption": "Old Patient details screen (not my work)"
+        }
+
+      ]
+    }
+  ]
+}

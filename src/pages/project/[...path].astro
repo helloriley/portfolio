@@ -1,0 +1,50 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ThemeProvider from "../../components/theme-provider";
+import Navbar from "../../components/navbar";
+import HeaderProject from "../../components/project/header";
+import ChallengeRole from "../../components/project/challengerole";
+import Solutions from "../../components/project/solutions";
+import FooterHome from "../../components/footer";
+
+import { getCollection, type CollectionEntry } from "astro:content";
+import type { IProjectCollection } from "../../content.config";
+
+export function getStaticPaths() {
+  return [
+    { params: { path: "sun-exchange-solar-investment-platform" } },
+    { params: { path: "pandoran-inspec-delivery-management-system" } },
+    { params: { path: "hospital-ward-management-system" } },
+    { params: { path: "hospital-census-unit-manager-dashboard" } },
+  ];
+}
+const { path } = Astro.params;
+
+if (path == undefined) {
+  Astro.redirect("/");
+}
+
+const Data: CollectionEntry<"project">[] = (
+  await getCollection("project")
+).filter((project) => project.data.slug == path);
+
+if (Data === undefined) {
+  return Astro.redirect("/");
+}
+const projectData: IProjectCollection = Data.length > 0 ? Data[0].data : [];
+const backgroundClass =
+  projectData?.banner?.backgroundclass != undefined
+    ? projectData?.banner?.backgroundclass
+    : "bg-white";
+---
+
+<Layout title="MRiley Project">
+  <main>
+    <ThemeProvider client:only="react" />
+    <Navbar client:only="react" />
+    <HeaderProject project={projectData} client:only="react" />
+    <ChallengeRole project={projectData} client:only="react" />
+    <Solutions project={projectData} client:only="react" />
+    <FooterHome client:only="react" />
+  </main>
+</Layout>

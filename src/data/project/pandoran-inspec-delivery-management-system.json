@@ -1,0 +1,131 @@
+{
+  "slug": "pandoran-inspec-delivery-management-system",
+  "isdraft": "false",
+  "company": "Pandoran InSpec",
+  "title": "Enterprise Delivery Management System",
+  "url": "https://www.helloriley-portfolio.github.io/project/pandoran-inspec-delivery-management-system",
+  "link": "/project/pandoran-inspec-delivery-management-system",
+  "featureimg": "/images/inspec-pmo-projects-tree-with-flags-1346x700.jpg",
+  "datecompleted": "2020-05-15",
+  "challengetitle": "Redesigned Delivery Management System",
+  "challenge": "The CISCO team, ranging from project administrators, team managers and engineers, were struggling with the outdated interface causing workflow inefficiencies and navigation confusion across complex project hierarchies",
+  "role": "Lead UI/UX Designer and Frontend Developer",
+  "technologies": "Angular, C#, HTML/CSS, Git, Adobe XD",
+  "banner":
+  {
+    "bullets": 
+    [
+      "Improved usability and workflow efficiency",
+      "Enhanced project hierarchy navigation",
+      "Streamlined user access to core functionalities",
+      "Best version the client has ever had across all 10 versions"
+    ],
+    "src" : "/images/inspec-banner-1-1200x700.png",
+    "alt" : "Enterprise-level Delivery Management System",
+    "backgroundcolor": "bg-gradient-to-t from-light-blue-50 to-light-blue-50/20",
+    "bulletcolor": "#2196f3"
+  },
+  "solutions": [
+    {
+      "title": "Rebrand, UI & Navigation Overhaul",
+      "tag": "Solution 1",
+      "link": "solution1",
+      "problem": "Horizontal menu overflow, disjointed user flows. Outdated branding and system looks dated.",
+      "solution": "Vertical collapsible navigation with role-based grouping. Mapped user role flows. Updated branding and modernized UI design.",
+      "solutionbullets": 
+      [
+        "Mapped user flows to identify friction points",
+        "Rebranded and modernized UI design for improved aesthetics and usability",
+        "Redesigned Menu structure based on user roles and tasks",
+        "Collapsible vertical menu, with role-based grouping"
+      ],
+      "impact": "",
+      "impactbullets": 
+      [
+        "The redesigned system achieved the tender shortlist status!",
+        "Client stated 'the best look InSpec has ever had' - the first across all previous 10 versions that they didn't want to rollback for ease and comfort of use.",
+        "Project managers had quick and easy access to their core functionalities without getting lost while the Engineers could get straight to their tasks.",
+        "Eliminated need for user manuals."
+      ],
+      "gallery": 
+      [
+        {
+          "src": "/images/inspec-pmo-projects-tree-with-flags-1346x700.jpg",
+          "alt": "Redesigned Delivery Management System",
+          "caption": "Redesigned and rebranded an Enterprise-level Delivery Management System"
+        },
+        {
+          "src": "/images/inspec-old-project-task-1452x770.jpg",
+          "alt": "Old Project Tasks Treeview and menu options view",
+          "caption": "Old Project Tasks Treeview and menu options view (not my work)"
+        },
+        {
+          "src": "/images/inspec-pmo-my-tasks-1524x770.jpg",
+          "alt": "Redesigned Project Managers Tasks Treeview and menu options view",
+          "caption": "Redesigned Project Manager's Tasks. Showing Treeview of tasks and Task menu/actions, filtered by Project (dropdown)."
+        },
+        {
+          "src": "/images/inspec-old-project-milestone-1674x770.jpg",
+          "alt": "Old Project Milestones Treeview and menu options view",
+          "caption": "Old Project Milestones Treeview and menu options view (not my work)"
+        },
+        {
+          "src": "/images/inspec-old-login-1265x770.jpg",
+          "alt": "Old Login screen",
+          "caption": "Old Login screen (not my work)"
+        },
+        {
+          "src": "/images/inspec-new-login-1334x770.jpg",
+          "alt": "Rebranded Login screen",
+          "caption": "Updated and rebranded Login screen"
+        },
+        {
+          "src": "/images/inspec-pmo-manage-users-roles-1504x770.jpg",
+          "alt": "Project Managers manage Users and User Roles",
+          "caption": "Project Manager's popup for managing User Roles and Permissions"
+        },
+        {
+          "src": "/images/inspec-my-tasks-kanban-status-report-1504x770.png",
+          "alt": "Project Manager's popup to update their task's status report",
+          "caption": "Project Manager's popup to update their task's status report, overlayed on their tasks displayed as a kanban board"
+        }
+      ]
+    },
+    {
+      "title": "Treeview Intelligence",
+      "tag": "Solution 2",
+      "link": "solution2",
+      "problem": "Users making blind clicks to discover node contents, wasting time and causing frustration.",
+      "solution": "Visual indicators for treeview child nodes, additional contents, inline actions leading to smarter decisions. Add option to view tasks as treeview, kanban or listing with drag-n-drop functionality.",
+      "solutionbullets": 
+      [
+        "Added inline visual indicators for child nodes, and inline 'hasFlags' indicators for issues, reminders, documents and attachments",
+        "Inline actions for quick access to common node-specific tasks",
+        "Smarter expansion based on inline indicator visuals",
+        "Toggle task overview between treeview, listing and kanban board for familiar task management"
+      ],
+      "impact": "",
+      "impactbullets": 
+      [
+        "Substantially improved workflow efficiency",
+        "System was easier to use with at-a-glance indicators, highlighting additional content",
+        "Significantly reduced user frustration from unnecessary node clicks, to finding out if a node had children, issues, reminders, documents and attachments.",
+        "Greater user satisfaction with multiple task overview display options: treeview, kanban board and listing (My Tasks) with drag-n-drop functionality to shift items up or down."
+      ],
+      "gallery": 
+      [
+        {
+          "src": "/images/inspec-pmo-projects-tree-with-flags-outlined-1483x770.png",
+          "alt": "Redesigned Delivery Management System Treeviews",
+          "caption": "Visual indicators for child nodes, issues, reminders, documents and attachments in the Project Treeview."
+        },
+        {
+          "src": "/images/inspec-old-pmo-projects-treeview-1688x770.png",
+          "alt": "Redesigned Delivery Management System Treeviews",
+          "caption": "Old PMO Projects Treeview showing an opened Task with no subtask, along with other unopened Milestones - with no idea if they have child nodes (tasks, subtasks) or Issues, Reminders, Documents and Attachments."
+        }
+
+      ]
+    }
+  ]
+}

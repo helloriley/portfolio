@@ -1,0 +1,63 @@
+{
+  "slug": "hospital-census-unit-manager-dashboard",
+  "isdraft": "false",
+  "company": "Life Heathcare and Dariel",
+  "title": "Hospital Census Unit Manager Dashboard",
+  "url": "https://www.helloriley-portfolio.github.io/project/hospital-census-unit-manager-dashboard",
+  "link": "/project/hospital-census-unit-manager-dashboard",
+  "featureimg": "/images/hospital-unit-manager-dashboard-new-1369x770.jpg",
+  "datecompleted": "2015-03-15",
+  "challengetitle": "Redefining Hospital Manager Dashboard",
+  "challenge": "Unit Managers at the hospitals lacked real-time patient overview at-a-glance, requiring time-consuming system search and individual patient checks to monitor ward status.",
+  "role": "Frontend Engineer & UI/UX Designer",
+  "technologies": "C#, WPF, XAML, Git",
+  "banner":
+  {
+    "bullets": 
+    [
+      "Immediate 4-day patient status, at-a-glance",
+      "Color-coded acuity indicators with legend",
+      "Unit managers could prioritize care and resource allocation effectively"
+    ],
+    "src" : "/images/hospital-unit-manager-banner-1200x700.png",
+    "alt" : "Hospital Unit Manager Dashboard",
+    "backgroundcolor": "bg-gradient-to-t from-blue-50 to-blue-50/20",
+    "bulletcolor": "#2196f3"
+  },
+  "solutions": [
+    {
+      "title": "Management Dashboard Redesign",
+      "tag": "Solution 1",
+      "link": "solution1",
+      "problem": "Analyzed manager information needs and decision patterns. No at-a-glance patient acuity monitoring.",
+      "solution": "Comprehensive 4-day patient overview with acuity scoring and filtering.",
+      "solutionbullets": 
+      [
+        "Immediate 4-day patient overview with key details visible at a glance",
+        "Color-coded acuity indicators with legend, filterable patient categories"
+      ],
+      "impact": "",
+      "impactbullets": 
+      [
+        "Managers gained immediate visibility into patient status, acuity and details",
+        "Unit managers could prioritize care and resource allocation more effectively",
+        "Significantly reduced time spent tracking patient status",
+        "Improved care coordination"
+      ],
+      "gallery": 
+      [
+        {
+          "src": "/images/hospital-unit-manager-dashboard-new-1369x770.jpg",
+          "alt": "Hopsital Unit Managers Dashboard Redesign",
+          "caption": "Hopsital Unit Managers Dashboard Redesign. Showing 4-day patient overview at-a-glance, with color-coded acuity indicators and filtering options."
+        },
+        {
+          "src": "/images/hospital-unit-manager-dashboard-old-1336x770.jpg",
+          "alt": "Old Hopsital Unit Managers Dashboard (not my work)",
+          "caption": "Old Hopsital Unit Managers Dashboard (not my work)"
+        }
+
+      ]
+    }
+  ]
+}

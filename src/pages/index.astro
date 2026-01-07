@@ -1,0 +1,34 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ThemeProvider from "../components/theme-provider";
+import Navbar from "../components/navbar";
+import HeaderHome from "../components/home/header";
+import AboutHome from "../components/home/about";
+import ProjectsHome from "../components/home/projects";
+import TestimonialsHome from "../components/home/testimonialsgrid";
+import ContactHome from "../components/home/contact";
+import Footer from "../components/footer";
+import { getCollection, type CollectionEntry } from "astro:content";
+
+const projectsData: CollectionEntry<"project">[] = (
+  await getCollection("project")
+)
+  .filter((project) => project.data.isdraft === "false")
+  .sort(
+    (a: CollectionEntry<"project">, b: CollectionEntry<"project">) =>
+      b.data.datecompleted.valueOf() - a.data.datecompleted.valueOf()
+  );
+---
+
+<Layout title="MRiley Portfolio">
+  <main>
+    <ThemeProvider client:only="react" />
+    <Navbar client:only="react" />
+    <HeaderHome client:only="react" />
+    <AboutHome client:only="react" />
+    <ProjectsHome projects={projectsData} client:only="react" />
+    <TestimonialsHome client:only="react" />
+    <ContactHome client:only="react" />
+    <Footer client:only="react" />
+  </main>
+</Layout>
