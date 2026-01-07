@@ -3,6 +3,8 @@ import { Card, CardBody, Typography, ButtonGroup, Button } from "@material-tailw
 import Solution from "./solution";
 import type { IProjectCollection } from "../../content.config";
 
+const baseURL = import.meta.env.BASE_URL || "/portfolio";
+
 export function ProjectSolutions({...props}: IProjectCollection) {
   const project = props.project;
   return (
@@ -30,7 +32,7 @@ export function ProjectSolutions({...props}: IProjectCollection) {
               <ButtonGroup variant="outlined" className="justify-center">
               {project.solutions.map(({ title, link }) => (
                   <Button key={link} variant="outlined" className="items-center hover:shadow-lg" >
-                    <a href={"#" + link}>{title}</a>
+                    <a href={baseURL + project.link + "/#" + link}>{title}</a>
                   </Button>
               ))}
             </ButtonGroup>

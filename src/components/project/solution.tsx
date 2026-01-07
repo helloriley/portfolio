@@ -8,6 +8,8 @@ import {
 } from "@material-tailwind/react";
 import type { ISolutionProps } from "../../content.config";
 
+const baseURL = import.meta.env.BASE_URL || "/portfolio";
+
 export function FeatureSolutionSection(solutionProps: ISolutionProps) {
   const { title, tag, link, problem, solution, solutionbullets, impact, impactbullets, gallery } = solutionProps;
   const defaultImageSrcIndex = 0; //gallery.length > 0 ? 0 : "";
@@ -84,7 +86,7 @@ export function FeatureSolutionSection(solutionProps: ISolutionProps) {
                       <div className="relative w-full overflow-visible">
                         <img
                           className="relative z-0 h-auto w-full max-w-full rounded-lg object-contain object-center md:h-[550px] border-4 border-blue-gray-50/70 shadow-lg"
-                          src={gallery[galleryActiveIndex]?.src}
+                          src={baseURL + gallery[galleryActiveIndex]?.src}
                           alt=""
                         />
                       
@@ -115,7 +117,7 @@ export function FeatureSolutionSection(solutionProps: ISolutionProps) {
                       <div key={index}>
                         <img
                           onClick={() => {setGalleryActiveIndex(index);}}
-                          src={src}
+                          src={baseURL + src}
                           className={`h-20 max-w-full cursor-pointer rounded-lg object-cover object-center ${
                             gallery[galleryActiveIndex].src === src ? "border-2 border-blue-300" : "border-none"
                           }`}

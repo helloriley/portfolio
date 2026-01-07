@@ -1,6 +1,8 @@
 import React from "react";
 import type { IProjectCollection } from "../../content.config";
 
+const baseURL = import.meta.env.BASE_URL || "/portfolio";
+
 export function HeroSection({...props}: IProjectCollection) {
   const project = props.project;
 
@@ -33,7 +35,7 @@ export function HeroSection({...props}: IProjectCollection) {
               </ul>
             </div>
             <img
-              src={project.banner.src}
+              src={baseURL + project.banner.src}
               alt={project.banner.alt}
               className="col-span-1 object-cover object-top-left"
             />

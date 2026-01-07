@@ -5,6 +5,7 @@ import {
   CardHeader,
 } from "@material-tailwind/react";
 
+const baseURL = import.meta.env.BASE_URL || "/portfolio";
 interface TestimonialCardPropsType {
   img: string;
   client: string;
@@ -50,7 +51,7 @@ function TestimonialCard({
         </div>
         {
           img == "" ? null :    
-          <img src={img} className="max-w-[8rem]" alt={client} />
+          <img src={baseURL + img} className="max-w-[8rem]" alt={client} />
         }
       </CardBody>
     </Card>

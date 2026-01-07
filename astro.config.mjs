@@ -6,7 +6,6 @@ const isProd = process.env.NODE_ENV === "production";
 
 export default defineConfig({
   integrations: [react(), tailwind()],
-  site: "https://helloriley-portfolio.github.io",
-  base: "/",    // Note: adjust navbar routes if this changes!
-  //base: "/astro-launch-ui/",
+  site: "https://helloriley.github.io", //"https://helloriley-portfolio.github.io",
+  base: "/portfolio",    // Note: adjust navbar routes if this changes!
 });

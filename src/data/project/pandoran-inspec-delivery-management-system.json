@@ -122,7 +122,7 @@
         {
           "src": "/images/inspec-old-pmo-projects-treeview-1688x770.png",
           "alt": "Redesigned Delivery Management System Treeviews",
-          "caption": "Old PMO Projects Treeview showing an opened Task with no subtask, along with other unopened Milestones - with no idea if they have child nodes (tasks, subtasks) or Issues, Reminders, Documents and Attachments."
+          "caption": "Old PMO Projects Treeview showing an opened Task with no subtask, along with other unopened Milestones - with no idea if they have child nodes (tasks, subtasks) or Issues, Reminders, Documents and Attachments, leading to empty clicks and significant frustration."
         }
 
       ]

@@ -2,6 +2,8 @@ import { Button, Typography } from "@material-tailwind/react";
 const links = ["Home", "About", "Projects"];
 const currentYear = new Date().getFullYear();
 
+const baseURL = import.meta.env.BASE_URL || "/portfolio";
+
 export function Footer() {
   return (
     <footer className="px-8 py-10">
@@ -34,7 +36,7 @@ export function Footer() {
                   <li>
                     <Typography
                       as="a"
-                      href={`/#` + link.toLowerCase()}
+                      href={baseURL + "/#" + link.toLowerCase()}
                       color="white"
                       className="font-medium text-blue-gray-900 hover:!text-blue-gray-600 transition-colors"
                     >
@@ -44,7 +46,7 @@ export function Footer() {
                 </ul>
               ))}
             </div>
-            <a href="/#contact">
+            <a href={baseURL + "/#contact"}>
               <Button color="gray" className="w-full md:w-fit hover:bg-blue-gray-800">
                 Contact
               </Button>

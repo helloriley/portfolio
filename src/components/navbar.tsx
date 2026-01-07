@@ -6,6 +6,7 @@ import {
   Button
 } from "@material-tailwind/react";
 
+const baseURL = import.meta.env.BASE_URL || "/portfolio";
 interface NavItemPropsType {
   label: string;
   linkRef: string;
@@ -24,9 +25,9 @@ function NavItem({ label, linkRef }: NavItemPropsType) {
 function NavList() {
   return (
     <ul className="mb-4 mt-2 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-8">
-      <NavItem label="Home" linkRef="/"/>
-      <NavItem label="About" linkRef="/#about"/>
-      <NavItem label="Projects" linkRef="/#projects"/>
+      <NavItem label="Home" linkRef={baseURL + "/"} />
+      <NavItem label="About" linkRef={baseURL + "/#about"}/>
+      <NavItem label="Projects" linkRef={baseURL + "/#projects"}/>
     </ul>
   );
 }
@@ -50,7 +51,7 @@ export function NavbarBlurred() {
         <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"
-            href="/"
+            href={baseURL + "/"}
             variant="h6"
             color="blue-gray-600"
             className="mr-4 cursor-pointer"
@@ -60,7 +61,7 @@ export function NavbarBlurred() {
           <div className="hidden lg:flex ml-auto mr-8">
             <NavList />
           </div>
-          <a href="/#contact">
+          <a href={baseURL + "/#contact"}>
             <Button
                 color="gray"
                 size="sm"
@@ -72,7 +73,7 @@ export function NavbarBlurred() {
         </div>
         <Collapse open={open}>
           <NavList />
-          <a href="/#contact">
+          <a href={baseURL + "/#contact"}>
             <Button size="sm" className="mb-2 hover:bg-blue-gray-800" fullWidth>
               Contact
             </Button>

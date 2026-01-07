@@ -4,6 +4,8 @@ import {
   Typography,
 } from "@material-tailwind/react";
 
+const baseURL = import.meta.env.BASE_URL || "/portfolio";
+
 export function HeroPresentation() {
   return (
     <header className="h-full w-screen place-items-center bg-white relative px-8 py-8 lg:mb-20">
@@ -28,7 +30,7 @@ export function HeroPresentation() {
             Where creativity meets functionality - user-centered responsive websites that engage users.
           </Typography>
           <div className="mt-12 flex flex-wrap justify-center gap-3 lg:justify-start">
-            <a href="#about">
+            <a href={baseURL + "#about"}>
               <Button color="dark" className="flex items-center hover:bg-blue-gray-800">
                 Find out more
               </Button>
