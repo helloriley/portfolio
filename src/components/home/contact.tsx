@@ -9,6 +9,8 @@ import {
 } from "@material-tailwind/react";
 import { actions } from "astro:actions";
 
+export const prerender = false;
+
 // Note: Override fix for TextArea border focus issue in contact form below.
 
 export function ContactSection() {
@@ -120,7 +122,7 @@ export function ContactSection() {
               />
               {/* simple inline validation message */}
               <Typography variant="small" color={email ? (emailIsValid ? "blue" : "red") : "gray"} className="mt-1">
-                {email ? (emailIsValid ? "Email looks good" : "Enter a valid email address") : "Will use this email to contact you"}
+                {email ? (emailIsValid ? "Email looks good" : "Enter a valid email address") : "Email will be used to reply to you"}
               </Typography>
             </div>            
             <Textarea

@@ -7,6 +7,7 @@ import node from "@astrojs/node";
 const isProd = process.env.NODE_ENV === "production";
 
 export default defineConfig({
+  output: 'server',
   integrations: [react(), tailwind()],
 
   site: "https://helloriley.github.io",
