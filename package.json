@@ -1,35 +1,20 @@
 {
   "name": "",
   "version": "1.0.0",
-  "description": "The ultimate starter template for your startup web project",
+  "description": "Portfolio for MRiley - Transforming ideas into digital experiences. Explore my projects, skills, and contact information.",
   "main": "assets/js/astro-launch-ui.min.js",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "create-free-demo": "node create-free-demo.js"
+    "astro": "astro"
   },
   "keywords": [
     "Astro",
-    "Startup",
-    "Corporate",
-    "Store Theme",
-    "Online Store",
-    "Startup template",
-    "Astro startup",
-    "Astro Startup",
-    "Astro store",
-    "Store theme",
-    "Startup theme",
-    "Astro Startup theme",
-    "Astro Startup store",
-    "Astro template",
-    "Astro store template"
+    "Startup"
   ],
-  "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
-  "license": "MIT",
+  "author": "M Riley <hello.mriley@gmail.com> (https://helloriley.github.io/portfolio)",
   "dependencies": {
     "@astrojs/node": "^9.5.1",
     "@astrojs/react": "^4.4.2",
@@ -47,8 +32,7 @@
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.0",
     "react-bootstrap": "^2.6.0",
-    "react-dom": "^18.2.0",
-    "resend": "^6.6.0"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/next": "^9.0.0",
@@ -59,10 +43,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/astro-launch-ui.git"
+    "url": "git+https://github.com/helloriley/portfolio.git"
   },
-  "bugs": {
-    "url": "https://github.com/creativetimofficial/astro-launch-ui/issues"
-  },
-  "homepage": "https://www.creative-tim.com/astro/launch-ui/"
+  "homepage": "https://helloriley.github.io/portfolio/"
 }

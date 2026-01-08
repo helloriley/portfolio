@@ -9,8 +9,6 @@ import {
 } from "@material-tailwind/react";
 import { actions } from "astro:actions";
 
-export const prerender = false;
-
 // Note: Override fix for TextArea border focus issue in contact form below.
 
 export function ContactSection() {
