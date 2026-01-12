@@ -20,7 +20,7 @@ function TestimonialCard({
   clientInfo,
 }: TestimonialCardPropsType) {
   return (
-    <Card shadow={true} className="bg-blue-gray-50/50 rounded-2xl p-6 shadow-md ">
+    <Card shadow={true} className="bg-blue-gray-50/40 rounded-2xl p-6 shadow-md ">
       <CardHeader color="transparent" floated={false} shadow={false}>
         <div>
           <Typography

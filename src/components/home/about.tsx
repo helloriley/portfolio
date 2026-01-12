@@ -29,7 +29,7 @@ function FeatureCard({ icon, title, children }) {
 const features = [
   {
     icon: (
-      <img className="w-32 mx-auto mb-4" src={baseURL + "/icon1.png"} />
+      <img className="w-32 mx-auto mb-4" src={baseURL + "/icon1.jpg"} alt="website and online product design"/>
     ),
     title: "Design",
     description:
@@ -37,7 +37,7 @@ const features = [
   },
   {
     icon: (
-      <img className="w-32 mx-auto mb-4" src={baseURL + "/icon2.png"} />
+      <img className="w-32 mx-auto mb-4" src={baseURL + "/icon2.jpg"} alt="website and online product development"/>
     ),
     title: "Development",
     description:
@@ -45,7 +45,7 @@ const features = [
   },
   {
     icon: (
-      <img className="w-32 mx-auto mb-4" src={baseURL + "/icon3.png"} />
+      <img className="w-32 mx-auto mb-4" src={baseURL + "/icon4.jpg"} alt="website and online product strategy"/>
     ),
     title: "Strategy",
     description:

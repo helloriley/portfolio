@@ -8,10 +8,10 @@ const baseURL = import.meta.env.BASE_URL || "/portfolio";
 
 export function HeroPresentation() {
   return (
-    <header className="h-full w-screen place-items-center bg-white relative px-8 py-8 lg:mb-20">
+    <header className="h-full w-screen place-items-center bg-white relative px-8 py-8 lg:mb-16">
       <div id="home" className="container mx-auto grid items-center lg:grid-cols-2">
         <div className="text-center lg:text-left pt-32">
-          <div className="mb-8 inline-flex items-center">
+          <div className="mb-4 inline-flex items-center">
             <Typography
               variant="small"
               className="mr-3 py-0.5 px-2 font-bold text-dark uppercase"
@@ -39,7 +39,7 @@ export function HeroPresentation() {
         </div>
       </div>
       <div className="hidden lg:flex">
-        <img src={baseURL + "/header.png"} alt="components" className="absolute -top-10 right-0 w-1/2" />
+        <img src={baseURL + "/images/banner-home-1200x1100.jpg"} alt="components" className="absolute -top-10 right-0 w-1/2" />
       </div>
     </header>
 
