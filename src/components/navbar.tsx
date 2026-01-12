@@ -53,8 +53,7 @@ export function NavbarBlurred() {
             as="a"
             href={baseURL + "/"}
             variant="h6"
-            color="blue-gray-600"
-            className="mr-4 cursor-pointer"
+            className="mr-4 cursor-pointer text-blue-gray-900"
           >
             MRiley Portfolio
           </Typography>

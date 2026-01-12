@@ -24,7 +24,7 @@ export function HeroPresentation() {
             color="blue-gray"
             className="mb-8 lg:mr-32 leading-tight font-black"
           >
-            Turning <span className="text-blue">ideas</span> into <span className="text-blue">products</span> that make an impact
+            Turning <span className="text-accent">ideas</span> into <span className="text-accent">products</span> that make an impact
           </Typography>
           <Typography variant="lead" color="blue-gray" className="lg:pr-32">
             Where creativity meets functionality - user-centered responsive websites that engage users.
@@ -32,7 +32,7 @@ export function HeroPresentation() {
           <div className="mt-12 flex flex-wrap justify-center gap-3 lg:justify-start">
             <a href={baseURL + "#about"}>
               <Button color="dark" className="flex items-center hover:bg-blue-gray-800">
-                Find out more
+                Explore
               </Button>
             </a>
           </div>

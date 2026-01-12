@@ -58,7 +58,7 @@ export function FeatureAbout() {
     <section id="about" className="py-8 px-8 lg:py-14">
       <div className="container mx-auto mb-20 text-center">
         <Typography color="dark" className="mb-2 font-bold text-lg uppercase">
-          <span className="text-blue">Skills</span>
+          <span className="text-accent">Skills</span>
         </Typography>
         <Typography variant="h2" color="blue-gray" className="mb-4">
           Delivering value your clients will notice

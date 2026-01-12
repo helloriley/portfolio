@@ -1,22 +1,17 @@
-
 import {
-  Button,
   Card,
   CardBody,
-  Input,
-  Textarea,
   Typography,
 } from "@material-tailwind/react";
-//import { actions } from "astro:actions";
 
 const baseURL = import.meta.env.BASE_URL || "/portfolio";
 
 export function ContactSection() {
   return (
     <section id="contact" className="px-8 py-10 lg:py-16">
-      <div className="container mx-auto mb-10 text-center lg:mb-20">
+      <div className="container mx-auto text-center lg:mb-20">
         <Typography color="dark" className="mb-2 font-bold text-lg uppercase">
-            <span className="text-blue">Contact</span>
+            <span className="text-accent">Contact</span>
         </Typography>
         <Typography
           variant="h2"
@@ -35,7 +30,7 @@ export function ContactSection() {
         className="max-w-[85rem] mx-auto rounded-2xl"
       >
         <CardBody className="grid grid-cols-1 gap-8 lg:grid-cols-2 items-center">
-          <div className="rounded-2xl bg-gray-900 lg:p-20 p-10">
+          <div className="rounded-2xl bg-gray-900 lg:p-20 p-10 lg:ml-4">
             <Typography
               variant="h4"
               color="white"
@@ -55,7 +50,7 @@ export function ContactSection() {
                   <div className="inline-block h-5 w-5 text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="white" d="M290.5 287.7L491.4 86.9 359 456.3 290.5 287.7zM457.4 53L256.6 253.8 88 185.3 457.4 53zM38.1 216.8l205.8 83.6 83.6 205.8c5.3 13.1 18.1 21.7 32.3 21.7 14.7 0 27.8-9.2 32.8-23.1L570.6 8c3.5-9.8 1-20.6-6.3-28s-18.2-9.8-28-6.3L39.4 151.7c-13.9 5-23.1 18.1-23.1 32.8 0 14.2 8.6 27 21.7 32.3z"/></svg>
                   </div>
-                  <Typography variant="h6" color="white" className="hover:text-blue-300">
+                  <Typography variant="h6" color="white" className="hover:text-accent-300">
                     hello.mriley@gmail.com
                   </Typography>
               </div>
@@ -65,7 +60,7 @@ export function ContactSection() {
                   <div className="inline-block h-5 w-5 text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="white" d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm5 170.2l66.5 0 0 213.8-66.5 0 0-213.8zm71.7-67.7a38.5 38.5 0 1 1 -77 0 38.5 38.5 0 1 1 77 0zM317.9 416l0-104c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9l0 105.8-66.4 0 0-213.8 63.7 0 0 29.2 .9 0c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9l0 117.2-66.4 0z"/></svg>
                   </div>
-                  <Typography variant="h6" color="white" className="hover:text-blue-300">
+                  <Typography variant="h6" color="white" className="hover:text-accent-300">
                     LinkedIn
                   </Typography>
               </div>

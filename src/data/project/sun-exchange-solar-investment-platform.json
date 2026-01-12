@@ -5,24 +5,24 @@
   "title": "Solar Investment Platform and Dashboard",
   "url": "https://www.helloriley-portfolio.github.io/project/sun-exchange-solar-investment-platform",
   "link": "/project/sun-exchange-solar-investment-platform",
-  "featureimg": "/images/sunexchange-new-buy-page-1070x770.jpg",
+  "featureimg": "/images/sunexchange-feature-1301x770.jpg",
   "datecompleted": "2023-03-15",
   "challengetitle": "Optimising Solar Investment Platform",
-  "challenge": "Redesign and develop Sun Exchange's solar investment platform and user dashboard to enhance user experience, streamline payment processes, and improve onboarding efficiency and purchases.",
+  "challenge": "Optimise and develop Sun Exchange's solar investment platform and user dashboard to enhance user experience, streamline payment processes, and improve onboarding efficiency and purchases.",
   "role": "Lead UI/UX Designer and Frontend Developer",
   "technologies": "Vue.js, Vuetify, TypeScript, Strapi CMS, Git, Adobe XD, Draw.io (workflows)",
   "banner":
   {
     "bullets": 
     [
-      "Improved onboarding process and conversions with an integrated step process",
       "Streamlined wallet-driven funding and purchase process",
-      "Redesigned the Buy page and simplified the user experience",
-      "Significantly reduced reconciliation times and freed up core team resources"
+      "Significantly reduced reconciliation times and freed up core team resources",
+      "Improved onboarding process and conversions with an integrated step process and state-aware Buy buttons",
+      "Enhanced the Buy page, Dashboard, Projects, How it Works and Project cards to improve user experience and conversions"
     ],
-    "src" : "/images/sunexchange-banner-1200x700.png",
+    "src" : "/images/banner-sunexchange-936x646.jpg",
     "alt" : "Solar Panels at Sunset",
-    "backgroundcolor": "bg-gradient-to-t from-amber-50 to-amber-50/20",
+    "backgroundcolor": "bg-gradient-to-t from-teal-50 to-teal-50/20",
     "bulletcolor": "#ffb300"
   },
   "solutions": [
@@ -114,7 +114,7 @@
         {
           "src": "/images/sunexchange-new-dashboard-overview-new-user-no-cells-1302x770.jpg",
           "alt": "New Dashboard overview new user no cells pre Onboarding updates",
-          "caption": "New Dashboard overview - New user no cells, pre Onboarding updates. Showing improved contextual guidance and motivation to fund and buy cells."
+          "caption": "New Dashboard overview - New user no cells (pre Onboarding updates). Showing improved contextual guidance and motivation to fund and buy cells."
         },
         {
           "src": "/images/sunexchange-incomplete-onboarding-buy-button-1762x770.jpg",

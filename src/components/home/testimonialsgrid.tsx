@@ -95,7 +95,7 @@ export function TestimonialSection() {
       <div className="container mx-auto">
         <div className="mb-12 text-center">
           <Typography color="dark" className="mb-2 !font-semibold text-lg uppercase">
-            <span className="text-blue">Testimonials</span>
+            <span className="text-accent">Testimonials</span>
           </Typography>
           <Typography
             variant="h2"

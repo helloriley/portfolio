@@ -22,7 +22,7 @@ function FeatureCard_StretchTwo({ tag, title, idx, children }: IFeatureCardProps
     return (
     <Card className={classNames} color="transparent" shadow={false}>
       <CardBody className="px-4">
-        <Typography variant="h6" color="blue" className="mb-2 uppercase">
+        <Typography variant="h6" className="mb-2 uppercase text-accent">
           {tag}
         </Typography>
         <Typography variant="h4" color="blue-gray" className="mb-2">
@@ -40,8 +40,9 @@ export function FeatureChallengeRoleSection({...props}: IProjectCollection) {
   const project = props.project;
   const challengeTag = "The Challenge";
   const roleTag = "Role and Tech";
+  const backgroundGradient = "bg-gradient-to-t from-gray-50 to-gray-50/10"
   return (
-    <section className="lg:py-10 py-4 px-8 lg:px-20 mx-auto">
+    <section className={"lg:py-10 py-4 px-8 lg:px-20 mx-auto " + backgroundGradient}>
       <div className="container mx-auto grid lg:gap-x-8 gap-y-8 grid-cols-1 lg:grid-cols-3">
         {
           <>

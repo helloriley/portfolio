@@ -5,6 +5,16 @@ module.exports = withMT({
   theme: {
     extend: {
       colors: {
+        accent: {
+          DEFAULT: "#3066FF",
+          50: "#e6ecff",
+          100: "#ccdaff",
+          300: "#80a2ff",
+          400: "#4d7cff",
+          500: "#3066FF",
+          600: "#0044ff",
+          800: "#002999"
+        },
         blue: {
           DEFAULT: "#3066FF",
           500: "#3066FF",

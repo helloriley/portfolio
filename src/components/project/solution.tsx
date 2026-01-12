@@ -10,19 +10,19 @@ import type { ISolutionProps } from "../../content.config";
 
 const baseURL = import.meta.env.BASE_URL || "/portfolio";
 
-export function FeatureSolutionSection(solutionProps: ISolutionProps) {
+export function FeatureSolutionSection(solutionProps: ISolutionProps, islast: boolean,) {
   const { title, tag, link, problem, solution, solutionbullets, impact, impactbullets, gallery } = solutionProps;
-  const defaultImageSrcIndex = 0; //gallery.length > 0 ? 0 : "";
+  const isLast = islast;
+  const defaultImageSrcIndex = 0; 
   const [galleryActiveIndex, setGalleryActiveIndex] = React.useState(defaultImageSrcIndex);
-
   return (
     <>
       <a id={link} className="h-20 lg:h-60"></a>
-        <section className="lg:pt-12 lg:pb-5 py-4 px-8 lg:px-20 mx-auto">
+        <section className="lg:pt-12 lg:pb-5 py-4 px-8 lg:px-20 mx-auto ">
           <div className="mb-10 container mx-auto grid lg:gap-x-8 gap-y-4 grid-cols-1 md:grid-cols-2">
             <div className="col-span-1 md:col-span-2 text-center mb-4">
               <Typography variant="h6"
-                className="text-blue-gray-400 uppercase"
+                className="text-accent uppercase"
               >
                 {tag}
               </Typography>
@@ -35,13 +35,13 @@ export function FeatureSolutionSection(solutionProps: ISolutionProps) {
             </div>
             <Card className="grid col-span-1" color="transparent" shadow={false}>
               <CardBody className="p-0">
-                <Typography variant="h6" color="blue" className="text-lg mb-2">
+                <Typography variant="h6" className="text-lg mb-2 text-accent">
                   Problem
                 </Typography>
                 <Typography variant="paragraph" color="blue-gray" className="text-lg !text-gray-600 mb-2">
                   {problem}
                 </Typography>
-                <Typography variant="h6" color="blue" className="text-lg mb-2">
+                <Typography variant="h6" className="text-lg mb-2 text-accent">
                   Solution
                 </Typography>
                 <Typography variant="paragraph" color="blue-gray" className="text-lg !text-gray-600">
@@ -56,7 +56,7 @@ export function FeatureSolutionSection(solutionProps: ISolutionProps) {
             </Card>
             <Card className="grid col-span-1 lg:border-l-2 lg:border-blue-gray-50 rounded-none pl-6" color="transparent" shadow={false}>
               <CardBody className="p-0">
-                <Typography variant="h6" color="blue" className="text-lg mb-2">
+                <Typography variant="h6" className="text-lg mb-2 text-accent">
                   Impact
                 </Typography>
                 <Typography variant="paragraph" color="blue-gray" className="text-lg !text-gray-600 mb-2">
@@ -69,7 +69,6 @@ export function FeatureSolutionSection(solutionProps: ISolutionProps) {
                           </span>
                           <span className="text-blue-gray text-lg font-semi-bold">{bullet}</span>
                         </li>
-
                       ))}
                     </ul>
                 </Typography>
@@ -78,14 +77,14 @@ export function FeatureSolutionSection(solutionProps: ISolutionProps) {
           </div>
           <div className="flex w-full justify-items-center mt-12">
             <div className="container mx-auto grid lg:gap-x-8 gap-y-8 grid-cols-1 justify-items-center">
-              <div className="col-span-1 lg:col-span-2">
+              <div className={"col-span-1 lg:col-span-2 " + (isLast ? "" : " pt-8 border-b border-gray")}>
                 <div className="grid gap-4">
                   <div className="text-center justify-items-center mb-0">
                     <div className="justify-center justify-items-center mb-0 md:w-[930px] lg:w-max-[1200px]">
                       
                       <div className="relative w-full overflow-visible">
                         <img
-                          className="relative z-0 h-auto w-full max-w-full rounded-lg object-contain object-center md:h-[550px] border-4 border-blue-gray-50/70 shadow-lg hover:cursor-pointer"
+                          className="relative z-0 h-auto w-full max-w-full rounded-2xl object-contain object-center md:h-[550px] border-4 border-blue-gray-800 shadow-lg hover:cursor-pointer"
                           src={baseURL + gallery[galleryActiveIndex]?.src}
                           alt=""
                           onClick={() => {
@@ -104,14 +103,14 @@ export function FeatureSolutionSection(solutionProps: ISolutionProps) {
                               onClick={() => setGalleryActiveIndex(i)}
                               color="blue-gray"
                               className={`inline-block h-3 rounded-full transition-all ring-1 ring-white/80 shadow-sm focus:outline-none focus:ring-2 focus:ring-white ${
-                                galleryActiveIndex === i ? "w-10 bg-slate shadow-md " : "w-4 bg-slate/60 "
+                                galleryActiveIndex === i ? "w-10 bg-slate shadow-md " : "w-4 bg-slate/30 "
                               }`}
                             />
                           ))}
                         </div>
                       </div>
                     
-                      <Typography variant="paragraph" color="blue-gray" className="text-md p-4 mb-0 w-full justify-center text-center bg-blue-gray-50/60 rounded-b-lg">
+                      <Typography variant="paragraph" color="blue-gray" className="text-md p-4 mb-0 w-full justify-center text-center bg-blue-gray-50/60 rounded-b-2xl">
                         {gallery.find((img) => img.src === gallery[galleryActiveIndex]?.src)?.caption}
                       </Typography>
                     </div>
@@ -123,7 +122,7 @@ export function FeatureSolutionSection(solutionProps: ISolutionProps) {
                           onClick={() => {setGalleryActiveIndex(index);}}
                           src={baseURL + src}
                           className={`h-20 max-w-full cursor-pointer rounded-lg object-cover object-center ${
-                            gallery[galleryActiveIndex].src === src ? "border-2 border-blue-300" : "border-none"
+                            gallery[galleryActiveIndex].src === src ? "border-2 border-accent-300" : "border-none"
                           }`}
                           alt={alt}
                         />

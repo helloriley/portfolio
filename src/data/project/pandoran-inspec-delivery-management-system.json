@@ -5,7 +5,7 @@
   "title": "Enterprise Delivery Management System",
   "url": "https://www.helloriley-portfolio.github.io/project/pandoran-inspec-delivery-management-system",
   "link": "/project/pandoran-inspec-delivery-management-system",
-  "featureimg": "/images/inspec-pmo-projects-tree-with-flags-1346x700.jpg",
+  "featureimg": "/images/inspec-feature-1482x770.jpg",
   "datecompleted": "2020-05-15",
   "challengetitle": "Redesigned Delivery Management System",
   "challenge": "The CISCO team, ranging from project administrators, team managers and engineers, were struggling with the outdated interface causing workflow inefficiencies and navigation confusion across complex project hierarchies",
@@ -15,12 +15,12 @@
   {
     "bullets": 
     [
-      "Improved usability and workflow efficiency",
+      "Significantly improved usability and workflow efficiency",
       "Enhanced project hierarchy navigation",
       "Streamlined user access to core functionalities",
       "Best version the client has ever had across all 10 versions"
     ],
-    "src" : "/images/inspec-banner-1-1200x700.png",
+    "src" : "/images/banner-inspec-936x646.jpg",
     "alt" : "Enterprise-level Delivery Management System",
     "backgroundcolor": "bg-gradient-to-t from-light-blue-50 to-light-blue-50/20",
     "bulletcolor": "#2196f3"

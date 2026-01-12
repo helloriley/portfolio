@@ -8,10 +8,10 @@ const baseURL = import.meta.env.BASE_URL || "/portfolio";
 export function ProjectSolutions({...props}: IProjectCollection) {
   const project = props.project;
   return (
-    <section className="lg:py-10 py-4 px-8">
+    <section className="lg:py-10 py-4 px-8 ">
       <div className="container mx-auto mb-10 text-center lg:mb-10">
-        <Typography variant="h6" color="dark" className="mb-2 uppercase">
-            <span className="text-blue">Solutions & Impact</span>
+        <Typography variant="h6" className="mb-2 uppercase text-accent">
+            Solutions & Impact
         </Typography>        
         <Typography
           variant="h4"
@@ -38,8 +38,8 @@ export function ProjectSolutions({...props}: IProjectCollection) {
             </ButtonGroup>
           </div>
       </div>
-      {project.solutions.map((solution) => (  
-        <Solution key={solution.link} {...solution} />
+      {project.solutions.map((solution, index) => (
+        <Solution key={solution.link} {...solution} islast={index + 1 == project.solutions.length} />
       ))}
     </section>
   );

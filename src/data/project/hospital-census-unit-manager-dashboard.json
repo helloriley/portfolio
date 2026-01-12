@@ -5,7 +5,7 @@
   "title": "Hospital Census Unit Manager Dashboard",
   "url": "https://www.helloriley-portfolio.github.io/project/hospital-census-unit-manager-dashboard",
   "link": "/project/hospital-census-unit-manager-dashboard",
-  "featureimg": "/images/hospital-unit-manager-dashboard-new-1369x770.jpg",
+  "featureimg": "/images/hospital-census-feature-1366x770.jpg",
   "datecompleted": "2015-03-15",
   "challengetitle": "Redefining Hospital Manager Dashboard",
   "challenge": "Unit Managers at the hospitals lacked real-time patient overview at-a-glance, requiring time-consuming system search and individual patient checks to monitor ward status.",
@@ -15,11 +15,11 @@
   {
     "bullets": 
     [
-      "Immediate 4-day patient status, at-a-glance",
-      "Color-coded acuity indicators with legend",
-      "Unit managers could prioritize care and resource allocation effectively"
+      "Immediate 4-day patient status, ready at-a-glance",
+      "Color-coded acuity indicators and legend",
+      "Unit managers could prioritize care and resource allocation more efficiently"
     ],
-    "src" : "/images/hospital-unit-manager-banner-1200x700.png",
+    "src" : "/images/banner-hospital-census-936x646.jpg",
     "alt" : "Hospital Unit Manager Dashboard",
     "backgroundcolor": "bg-gradient-to-t from-blue-50 to-blue-50/20",
     "bulletcolor": "#2196f3"
@@ -47,12 +47,12 @@
       "gallery": 
       [
         {
-          "src": "/images/hospital-unit-manager-dashboard-new-1369x770.jpg",
+          "src": "/images/hospital-census-dashboard-new-1369x770.jpg",
           "alt": "Hopsital Unit Managers Dashboard Redesign",
           "caption": "Hopsital Unit Managers Dashboard Redesign. Showing 4-day patient overview at-a-glance, with color-coded acuity indicators and filtering options."
         },
         {
-          "src": "/images/hospital-unit-manager-dashboard-old-1336x770.jpg",
+          "src": "/images/hospital-census-dashboard-old-1336x770.jpg",
           "alt": "Old Hopsital Unit Managers Dashboard (not my work)",
           "caption": "Old Hopsital Unit Managers Dashboard (not my work)"
         }

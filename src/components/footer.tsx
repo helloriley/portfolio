@@ -3,24 +3,19 @@ const links = ["Home", "About", "Projects"];
 const currentYear = new Date().getFullYear();
 
 const baseURL = import.meta.env.BASE_URL || "/portfolio";
+const backgroundGradient = "bg-gradient-to-b from-blue-gray-50 to-blue-gray-50/10";
 
 export function Footer() {
   return (
-    <footer className="px-8 py-10">
+    <footer className={"px-8 py-8 " + backgroundGradient}>
       <div className="container mx-auto">
-        <div className="flex flex-col items-center justify-between gap-4 border-t border-gray-200 pt-8 md:flex-row ">
+        <div className="flex flex-col items-center justify-between gap-4 pt-4 md:flex-row ">
           <div>
-            <Typography
-              color="blue-gray"
-              className="!text-base font-semibold text-blue-gray-700"
-            >
-              MRiley Portfolio - Turning ideas into solutions
-            </Typography>
             <Typography
               color="blue-gray"
               className="!text-base font-medium text-blue-gray-700"
             >
-              UI/UX Designer and Frontend Engineer
+              <span className="font-semibold">MRiley Portfolio</span> | UI/UX Designer and Frontend Engineer
             </Typography>
             <Typography
               color="blue-gray"
