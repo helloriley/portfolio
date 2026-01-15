@@ -21,6 +21,18 @@ const { title, metaDescription } = Astro.props;
     <meta name="description" content={metaDescription} />
     <meta name="generator" content={Astro.generator} />
     <link rel="canonical" href="https://helloriley.github.io/portfolio" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FVNQXDWZHE"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-FVNQXDWZHE");
+    </script>
   </head>
   <body class="overflow-x-hidden">
     <slot />
