@@ -39,7 +39,7 @@ export function HeroPresentation() {
         </div>
       </div>
       <div className="hidden lg:flex">
-        <img src={baseURL + "/images/banner-home-3-1200x984.jpg"} alt="components" className="absolute -top-10 right-0 w-1/2" />
+        <img src={baseURL + "/images/banner-home-3-1100x1030.jpg"} alt="components" className="absolute -top-10 right-0 w-1/2" />
       </div>
     </header>
 
