@@ -15,7 +15,7 @@ export function Footer() {
               color="blue-gray"
               className="!text-base font-medium text-blue-gray-700"
             >
-              <span className="font-semibold">MRiley Portfolio</span> | UI/UX Designer and Frontend Engineer
+              <span className="font-semibold">MRiley Portfolio</span> | Design Engineer, UI/UX Designer and Frontend Engineer
             </Typography>
             <Typography
               color="blue-gray"

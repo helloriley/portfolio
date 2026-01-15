@@ -41,7 +41,7 @@ const features = [
     ),
     title: "Development",
     description:
-      "React, TypeScript, Astro.js, Vue.js, Javascript, HTML, Material Tailwind UI, Tailwind CSS, Git, Responsive, Strapi CMS, Pages CMS.",
+      "React, Astro.js, TypeScript, Vue.js, Javascript, HTML, Material Tailwind UI, Tailwind CSS, Git, Responsive, Strapi CMS, Pages CMS.",
   },
   {
     icon: (
