@@ -18,6 +18,15 @@ const projectsData: CollectionEntry<"project">[] = (
     (a: CollectionEntry<"project">, b: CollectionEntry<"project">) =>
       b.data.datecompleted.valueOf() - a.data.datecompleted.valueOf()
   );
+
+const testimonialsData: CollectionEntry<"testimonial">[] = (
+  await getCollection("testimonial")
+)
+  .filter((testimonial) => testimonial.data.isdraft === false)
+  .sort(
+    (a: CollectionEntry<"testimonial">, b: CollectionEntry<"testimonial">) =>
+      a.data.sortorder - b.data.sortorder
+  );
 ---
 
 <Layout
@@ -30,7 +39,7 @@ const projectsData: CollectionEntry<"project">[] = (
     <HeaderHome client:only="react" />
     <AboutHome client:only="react" />
     <ProjectsHome projects={projectsData} client:only="react" />
-    <TestimonialsHome client:only="react" />
+    <TestimonialsHome testimonials={testimonialsData} client:only="react" />
     <ContactHome client:only="react" />
     <Footer client:only="react" />
   </main>
