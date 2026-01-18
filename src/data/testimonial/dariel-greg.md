@@ -8,6 +8,6 @@ testimonial: ...Michelle has been deployed on a number of projects ranging from
   critical business projects... Without exception the quality of Michelle’s work
   has been of the highest order, displaying not only a high level of technical
   competence but also a passion for the work she does ...
-name: Greg Vx
+name: Greg V
 rolecompany: Executive Director, Dariel Solutions
 ---
