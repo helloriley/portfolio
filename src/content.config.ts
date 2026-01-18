@@ -49,6 +49,19 @@ const project = defineCollection({
     })
 });
 
+const testimonial = defineCollection({
+    loader: glob({ pattern: '**/[^_]*.md', base: "./src/data/testimonial" }),
+    schema: z.object({
+        isdraft: z.boolean(),
+        sortorder: z.number(),
+        testimonial: z.string(),
+        name: z.string(),
+        rolecompany: z.string(),
+    })
+});
+
+// Export types for collections
+
 export interface IProjectCollection {
     slug: string;
     isdraft: string;
@@ -102,6 +115,14 @@ export interface ISolutionProps {
   }[];
 }
 
+export interface ITestimonialCollection {
+    isdraft: boolean;
+    sortorder: number;
+    testimonial: string;
+    name: string;
+    rolecompany: string;
+}
+
 // Export collections object to register collection(s)
-export const collections = { project };
+export const collections = { project, testimonial };
 

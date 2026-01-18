@@ -1,0 +1,42 @@
+media:
+  input: public/images
+  output: /images
+  path: public/images
+  extensions: [".jpg", ".jpeg", ".png", ".webp", ".gif", ".svg"]
+content:
+  - name: testimonials
+    label: Testimonials
+    type: collection
+    path: src/data/testimonial
+    filename: "*.md"
+    format: md
+    view:
+      fields: [ "isdraft", "sortorder", "name", "rolecompany" ]
+      primary: name
+      sort: sortorder
+      default:
+        sort: sortorder
+        order: asc
+    fields: 
+      - name: isdraft
+        label: "Is Draft"
+        type: boolean
+        default: false
+      - name: sortorder
+        label: "Sort Order"
+        type: number
+        required: true
+        default: 0
+      - name: testimonial
+        label: Testimonial
+        type: textarea
+        required: true
+      - name: name
+        label: Name
+        type: string
+        required: true
+      - name: rolecompany
+        label: "Role, Company"
+        type: string
+        required: true     
+
