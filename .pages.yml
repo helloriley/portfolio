@@ -1,5 +1,5 @@
 media:
-  input: public/images
+  input: images
   output: /images
   path: public/images
   extensions: [".jpg", ".jpeg", ".png", ".webp", ".gif", ".svg"]
