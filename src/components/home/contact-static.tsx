@@ -9,7 +9,7 @@ const baseURL = import.meta.env.BASE_URL || "/portfolio";
 export function ContactSection() {
   return (
     <section id="contact" className="px-8 py-10 lg:py-16">
-      <div className="container mx-auto text-center lg:mb-20">
+      <div className="container mx-auto text-center lg:mb-10">
         <Typography color="dark" className="mb-2 font-bold text-lg uppercase">
             <span className="text-accent">Contact</span>
         </Typography>

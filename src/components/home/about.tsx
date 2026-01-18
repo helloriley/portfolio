@@ -33,7 +33,7 @@ const features = [
     ),
     title: "Design",
     description:
-      "User flows, Wireframing, Prototyping, Usability testing, Task flows, User interface design, User Experience design, Figma, Adobe XD.",
+      "User flows, Wireframing, Prototyping, Usability testing, Task flows, User interface design, User Experience design, Figma, Adobe XD, Adobe Photoshop",
   },
   {
     icon: (
@@ -41,7 +41,7 @@ const features = [
     ),
     title: "Development",
     description:
-      "React, Astro.js, TypeScript, Vue.js, Javascript, HTML, Material Tailwind UI, Tailwind CSS, Git, Responsive, Strapi CMS, Pages CMS.",
+      "React, Astro.js, TypeScript, Vue.js, Javascript, HTML, Material Tailwind UI, Tailwind CSS, Node.js,Git, Responsive, Strapi CMS, Pages CMS",
   },
   {
     icon: (
@@ -49,7 +49,7 @@ const features = [
     ),
     title: "Strategy",
     description:
-      "Business requirements analysis, Customer Journey mapping, Conversion and SEO optimisations.",
+      "Business requirements analysis, Customer Journey mapping, Conversion and SEO optimisations",
   }
 ];
 
