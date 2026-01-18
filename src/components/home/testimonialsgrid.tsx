@@ -75,9 +75,9 @@ const testimonials = [
   },
   {
     title:
-      "...She worked with a number of our teams who were in the process of rewriting the existing hospital administration system for the organisation (Life Healthcare owns over 75 facilities in Southern Africa). She worked with a number of technical (backend) designers, developers, and user representatives to produce what we felt was a simple, sophisticated aesthetic for these applications ...",
-    client: "Gavin P",
-    clientInfo: "Senior Solutions Architect, Dariel Solutions",
+      "... The first is a geniune artistic talent for creating interfaces that are pleasing to the eye. The second quality is empathy. This presents itself as a geniune desire to understand the customer needs as well as her propensity to sympathize with the end user. The third quality, when combined with the other two, is a sure path to success. Michelle displays a work ethic and mature professionalism that has earned her the respect of her peers and managers ...",
+    client: "Wayne Y (BSc. CompSci)",
+    clientInfo: "Director and Chief Technical Officer, Dariel Solutions",
     img: "",
   },
   {
