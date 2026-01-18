@@ -9,7 +9,6 @@ content:
     type: collection
     path: src/data/testimonial
     filename: "*.md"
-    format: md
     view:
       fields: [ "isdraft", "sortorder", "name", "rolecompany" ]
       primary: name
