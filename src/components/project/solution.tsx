@@ -6,6 +6,7 @@ import {
   CardHeader,
   Typography,
 } from "@material-tailwind/react";
+import { InView } from '../motion-primitives/in-view';
 import type { ISolutionProps } from "../../content.config";
 
 const baseURL = import.meta.env.BASE_URL || "/portfolio";
@@ -26,12 +27,21 @@ export function FeatureSolutionSection(solutionProps: ISolutionProps, islast: bo
               >
                 {tag}
               </Typography>
-              <Typography variant="h4"
-                color="blue-gray"
-                className=""
-              >
-                {title}
-              </Typography>
+              <InView
+                variants={{
+                  hidden: { opacity: 0, y: 100, filter: 'blur(4px)' },
+                  visible: { opacity: 1, y: 0, filter: 'blur(0px)' },
+                }}
+                viewOptions={{ margin: '0px 0px -100px 0px' }}
+                transition={{ duration: 0.4, ease: 'easeInOut' }}
+              >                    
+                <Typography variant="h4"
+                  color="blue-gray"
+                  className=""
+                >
+                  {title}
+                </Typography>
+              </InView>
             </div>
             <Card className="grid col-span-1" color="transparent" shadow={false}>
               <CardBody className="p-0">
@@ -102,15 +112,15 @@ export function FeatureSolutionSection(solutionProps: ISolutionProps, islast: bo
                               aria-pressed={galleryActiveIndex === i}
                               onClick={() => setGalleryActiveIndex(i)}
                               color="blue-gray"
-                              className={`inline-block h-3 rounded-full transition-all ring-1 ring-white/80 shadow-sm focus:outline-none focus:ring-2 focus:ring-white ${
-                                galleryActiveIndex === i ? "w-10 bg-slate shadow-md " : "w-4 bg-slate/30 "
+                              className={`inline-block h-3 rounded-full transition-all ring-1 ring-white/80 shadow-sm focus:outline-none focus:ring-2 focus:ring-white hover:border-2 hover:border-accent-500 ${
+                                galleryActiveIndex === i ? "w-10 bg-accent shadow-md " : "w-4 bg-slate/30 "
                               }`}
                             />
                           ))}
                         </div>
                       </div>
                     
-                      <Typography variant="paragraph" color="blue-gray" className="text-md p-4 mb-0 w-full justify-center text-center bg-blue-gray-50/60 rounded-b-2xl">
+                      <Typography variant="paragraph" color="blue-gray" className="text-md p-4 mb-0 w-full justify-center text-center bg-accent-50/80 rounded-b-2xl">
                         {gallery.find((img) => img.src === gallery[galleryActiveIndex]?.src)?.caption}
                       </Typography>
                     </div>
@@ -121,9 +131,9 @@ export function FeatureSolutionSection(solutionProps: ISolutionProps, islast: bo
                         <img
                           onClick={() => {setGalleryActiveIndex(index);}}
                           src={baseURL + src}
-                          className={`h-20 max-w-full cursor-pointer rounded-lg object-cover object-center ${
-                            gallery[galleryActiveIndex].src === src ? "border-2 border-accent-300" : "border-none"
-                          }`}
+                          className={`h-20 max-w-full cursor-pointer rounded-lg object-cover object-center border-2 ${
+                            gallery[galleryActiveIndex].src === src ? "border-accent-400" : "border-white"
+                          } hover:border-2 hover:border-accent-400 transition-border`}
                           alt={alt}
                         />
                       </div>

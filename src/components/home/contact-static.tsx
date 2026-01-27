@@ -3,6 +3,7 @@ import {
   CardBody,
   Typography,
 } from "@material-tailwind/react";
+import { InView } from '../motion-primitives/in-view';
 
 const baseURL = import.meta.env.BASE_URL || "/portfolio";
 
@@ -20,10 +21,19 @@ export function ContactSection() {
         >
           Ready to improve your web business?
         </Typography>
-        <Typography variant="lead" className="mx-auto lg:w-7/12 text-blue-gray-800">
-          Gain better traction with your clients. How may I assist in transforming your website or product?
-          Send me an email. I look forward to hearing from you and how we can work towards your goals.
-        </Typography>
+        <InView
+          variants={{
+            hidden: { opacity: 0, y: 100, filter: 'blur(4px)' },
+            visible: { opacity: 1, y: 0, filter: 'blur(0px)' },
+          }}
+          viewOptions={{ margin: '0px 0px -100px 0px' }}
+          transition={{ duration: 0.4, ease: 'easeInOut' }}
+        >
+          <Typography variant="lead" className="mx-auto lg:w-7/12 text-blue-gray-800">
+            Gain better traction with your clients. How may I assist in transforming your website or product?
+            Send me an email. I look forward to hearing from you and how we can work towards your goals.
+          </Typography>
+        </InView>
       </div>
       <Card
         shadow={true}

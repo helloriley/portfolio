@@ -4,6 +4,8 @@ import {
   Typography,
 } from "@material-tailwind/react";
 
+import { TextEffect } from '../motion-primitives/text-effect';
+
 const baseURL = import.meta.env.BASE_URL || "/portfolio";
 
 export function HeroPresentation() {
@@ -19,6 +21,7 @@ export function HeroPresentation() {
               Welcome
             </Typography>
           </div>
+          
           <Typography
             variant="h1"
             color="blue-gray"
@@ -27,19 +30,21 @@ export function HeroPresentation() {
             Turning <span className="text-accent">ideas</span> into <span className="text-accent">products</span> that make an impact
           </Typography>
           <Typography variant="lead" color="blue-gray" className="lg:pr-32">
-            Where creativity meets functionality - user-centered responsive websites that engage users.
+            <TextEffect per='char' preset='fade' delay={0.5}>
+              Where creativity meets functionality. User-centered responsive websites that engage users.
+            </TextEffect>
           </Typography>
           <div className="mt-12 flex flex-wrap justify-center gap-3 lg:justify-start">
             <a href={baseURL + "#about"}>
-              <Button color="dark" className="flex items-center hover:bg-blue-gray-800">
+              <Button className="flex items-center hover:bg-accent-500 transition-colors">
                 Explore
               </Button>
             </a>
           </div>
         </div>
       </div>
-      <div className="hidden lg:flex">
-        <img src={baseURL + "/images/banner-home-4-1100x1016.jpg"} alt="components" className="absolute -top-10 right-0 w-1/2" />
+      <div className="flex lg:flex">
+        <img src={baseURL + "/images/banner-home-4-1100x1016.jpg"} alt="components" className="absolute -top-10 right-0 w-1/2 hover:scale-105 transition-transform" />
       </div>
     </header>
 

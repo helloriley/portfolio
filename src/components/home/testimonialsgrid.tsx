@@ -12,7 +12,7 @@ const baseURL = import.meta.env.BASE_URL || "/portfolio";
 function TestimonialCard({...props}: ITestimonialCollection) {
   const {isdraft, testimonial, name, rolecompany} = props.testimonial;
   return (
-    <Card shadow={true} className="bg-blue-gray-50/40 rounded-2xl p-6 shadow-md ">
+    <Card shadow={true} className="bg-blue-gray-50/40 hover:bg-accent-50/30 transition-colors rounded-2xl p-6 shadow-md ">
       <CardHeader color="transparent" floated={false} shadow={false}>
         <div>
           <Typography

@@ -6,6 +6,7 @@ import {
   CardHeader,
   Typography,
 } from "@material-tailwind/react";
+import { InView } from '../motion-primitives/in-view';
 
 import type { IProjectCollection } from "../../content.config";
 
@@ -28,9 +29,18 @@ function FeatureCard_StretchTwo({ tag, title, idx, children }: IFeatureCardProps
         <Typography variant="h4" color="blue-gray" className="mb-2">
           {title}
         </Typography>
-        <Typography variant="paragraph" className="!text-gray-600 text-lg">
-          {children}
-        </Typography>
+          <InView
+            variants={{
+              hidden: { opacity: 0, y: 100, filter: 'blur(4px)' },
+              visible: { opacity: 1, y: 0, filter: 'blur(0px)' },
+            }}
+            viewOptions={{ margin: '0px 0px -100px 0px' }}
+            transition={{ duration: 0.4, ease: 'easeInOut' }}
+          >
+          <Typography variant="paragraph" className="!text-gray-600 text-lg">
+            {children}
+          </Typography>
+        </InView>
       </CardBody>
     </Card>
   );

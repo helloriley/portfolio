@@ -15,7 +15,7 @@ interface NavItemPropsType {
 function NavItem({ label, linkRef }: NavItemPropsType) {
   return (
     <a href={linkRef}>
-      <Typography as="li" className="p-1 font-medium text-blue-gray-900 hover:!text-blue-gray-600 transition-colors">
+      <Typography as="li" className="px-3 py-1 rounded-lg font-medium text-blue-gray-900 hover:!text-accent-500 hover:bg-accent-100/30 transition-colors">
         {label}
       </Typography>
     </a>
@@ -53,7 +53,7 @@ export function NavbarBlurred() {
             as="a"
             href={baseURL + "/"}
             variant="h6"
-            className="mr-4 cursor-pointer text-blue-gray-900"
+            className="mr-4 cursor-pointer text-blue-gray-900 hover:!text-accent-500 transition-colors"
           >
             MRiley Portfolio
           </Typography>
@@ -64,7 +64,7 @@ export function NavbarBlurred() {
             <Button
                 color="gray"
                 size="sm"
-                className="hidden lg:inline-block hover:bg-blue-gray-800"
+                className="hidden lg:inline-block hover:bg-accent-500 transition-colors"
             >
                 Contact
             </Button>
@@ -73,7 +73,7 @@ export function NavbarBlurred() {
         <Collapse open={open}>
           <NavList />
           <a href={baseURL + "/#contact"}>
-            <Button size="sm" className="mb-2 hover:bg-blue-gray-800" fullWidth>
+            <Button size="sm" className="mb-2 hover:bg-accent-500 transition-colors" fullWidth>
               Contact
             </Button>
           </a>
