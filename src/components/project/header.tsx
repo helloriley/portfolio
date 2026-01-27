@@ -36,7 +36,7 @@ export function HeroSection({...props}: IProjectCollection) {
             <img
               src={baseURL + project.banner.src}
               alt={project.banner.alt}
-              className="col-span-1 object-cover object-top-left rounded-xl shadow-xl shadow-accent-800/20 w-full"
+              className="col-span-1 object-cover object-top-left rounded-xl shadow-xl shadow-accent-800/20 w-full hover:scale-105 transition-transform"
             />
           </div>
         </header>

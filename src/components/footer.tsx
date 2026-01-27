@@ -28,12 +28,12 @@ export function Footer() {
             <div className="flex items-center gap-8">
               {links.map((link, index) => (
                 <ul key={index} className="">
-                  <li>
+                  <li className="px-3 py-2 rounded-lg hover:bg-accent-100/30 transition-colors">
                     <Typography
                       as="a"
                       href={baseURL + "/#" + link.toLowerCase()}
                       color="white"
-                      className="font-medium text-blue-gray-900 hover:!text-blue-gray-600 transition-colors"
+                      className="font-medium text-blue-gray-900 hover:text-accent-500 transition-colors"
                     >
                       {link}
                     </Typography>
@@ -42,7 +42,7 @@ export function Footer() {
               ))}
             </div>
             <a href={baseURL + "/#contact"}>
-              <Button color="gray" className="w-full md:w-fit hover:bg-blue-gray-800">
+              <Button color="gray" className="w-full md:w-fit hover:bg-accent-500 transition-colors">
                 Contact
               </Button>
             </a>

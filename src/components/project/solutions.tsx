@@ -31,7 +31,7 @@ export function ProjectSolutions({...props}: IProjectCollection) {
           <div className="flex justify-center items-center">          
               <ButtonGroup variant="outlined" className="justify-center">
               {project.solutions.map(({ title, link }) => (
-                  <Button key={link} variant="outlined" className="items-center hover:shadow-lg" >
+                  <Button key={link} variant="outlined" className="items-center hover:shadow-lg hover:text-accent hover:border-accent-500 transition-colors" >
                     <a href={baseURL + project.link + "/#" + link}>{title}</a>
                   </Button>
               ))}

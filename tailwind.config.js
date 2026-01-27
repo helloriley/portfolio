@@ -44,6 +44,15 @@ module.exports = withMT({
           500: "#0F172A",
         },
       },
+      keyframes: {
+        'slide-in-right': {
+          '50%': { transform: 'translateX(50%)' }, // Starts off-screen right
+          '100%': { transform: 'translateX(0)' },  // Ends at its normal position
+        },
+      },
+      animation: {
+        'slide-in-right': 'slide-in-right 0.10s ease-in forwards', // 'forwards' keeps the final state
+      },
     },
   },
   safelist: [
