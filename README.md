@@ -14,4 +14,4 @@ View [Contact](https://helloriley.github.io/portfolio/#contact)
 
 Made with [Astro.js](https://astro.build/), React, Tailwind CSS, Material-Tailwind, Typescript and Astro's content collections
 
-:coffee: :white_love:
+:heart: + :coffee:
