@@ -4,6 +4,7 @@ import {
   Typography,
   CardHeader,
 } from "@material-tailwind/react";
+import { InView } from '../motion-primitives/in-view';
 import type { CollectionEntry } from "astro:content";
 import type { ITestimonialCollection } from "../../content.config";
 
@@ -12,7 +13,7 @@ const baseURL = import.meta.env.BASE_URL || "/portfolio";
 function TestimonialCard({...props}: ITestimonialCollection) {
   const {isdraft, testimonial, name, rolecompany} = props.testimonial;
   return (
-    <Card shadow={true} className="bg-blue-gray-50/40 hover:bg-accent-50/30 transition-colors rounded-2xl p-6 shadow-md ">
+    <Card color="white" shadow={true} className="hover:bg-accent-100/30 duration-500 transition-colors rounded-2xl p-6 shadow-md ">
       <CardHeader color="transparent" floated={false} shadow={false}>
         <div>
           <Typography
@@ -49,7 +50,7 @@ function TestimonialCard({...props}: ITestimonialCollection) {
 export function TestimonialSection({...props}: CollectionEntry<'testimonial'>[]) {
   const testimonials = props.testimonials.length > 0 ? props.testimonials : [];
   return (
-    <section className="px-8 py-10 lg:py-16">
+    <section className="px-8 py-10 lg:py-16 bg-gradient-to-b from-blue-gray-50/50 to-blue-gray-50/30">
       <div className="container mx-auto">
         <div className="mb-12 text-center">
           <Typography color="dark" className="mb-2 !font-semibold text-lg uppercase">
@@ -63,11 +64,20 @@ export function TestimonialSection({...props}: CollectionEntry<'testimonial'>[])
             Generous words from clients and colleagues
           </Typography>
         </div>
-        <div className="grid gap-10 grid-cols-1 lg:grid-cols-2 md:mx-10 lg:mx-20">
-          {testimonials.map((props, key) => (
-            <TestimonialCard key={key} testimonial={props.data} />
-          ))}
-        </div>
+        <InView
+          variants={{
+            hidden: { opacity: 0, y: 70, filter: 'blur(4px)' },
+            visible: { opacity: 1, y: 0, filter: 'blur(0px)' },
+          }}
+          viewOptions={{ margin: '0px 0px -70px 0px' }}
+          transition={{ duration: 0.5, ease: 'easeInOut' }}
+        >
+          <div className="grid gap-10 grid-cols-1 lg:grid-cols-2 md:mx-10 lg:mx-20">
+            {testimonials.map((props, key) => (
+              <TestimonialCard key={key} testimonial={props.data} />
+            ))}
+          </div>
+        </InView>
       </div>
     </section>
   );

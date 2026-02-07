@@ -5,6 +5,7 @@ import {
 } from "@material-tailwind/react";
 
 import { TextEffect } from '../motion-primitives/text-effect';
+import { InView } from "../motion-primitives/in-view";
 
 const baseURL = import.meta.env.BASE_URL || "/portfolio";
 
@@ -12,7 +13,7 @@ export function HeroPresentation() {
   return (
     <header className="h-full w-screen place-items-center bg-white relative px-8 py-8 lg:mb-16">
       <div id="home" className="container mx-auto grid items-center lg:grid-cols-2">
-        <div className="text-center lg:text-left pt-32">
+        <div className="text-center lg:text-left pt:20 lg:pt-32 mx-auto w-full md:w-8/12 lg:w-full">
           <div className="mb-4 inline-flex items-center">
             <Typography
               variant="small"
@@ -23,7 +24,7 @@ export function HeroPresentation() {
           </div>
           
           <Typography
-            variant="h1"
+            variant={window.innerWidth > 1024 ? "h1" : "h2"}
             color="blue-gray"
             className="mb-8 lg:mr-32 leading-tight font-black"
           >
@@ -42,9 +43,9 @@ export function HeroPresentation() {
             </a>
           </div>
         </div>
-      </div>
-      <div className="flex lg:flex">
-        <img src={baseURL + "/images/banner-home-4-1100x1016.jpg"} alt="components" className="absolute -top-10 right-0 w-1/2 hover:scale-105 transition-transform" />
+      </div>      
+      <div className="">
+        <img src={baseURL + "/images/banner-home-6-1200x1100.jpg"} alt="components" className="lg:absolute lg:-top-12 right-0 w-full lg:w-1/2 hover:scale-105 delay-150 duration-500 transition-transform object-cover" />
       </div>
     </header>
 

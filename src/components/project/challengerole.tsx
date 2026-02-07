@@ -6,7 +6,6 @@ import {
   CardHeader,
   Typography,
 } from "@material-tailwind/react";
-import { InView } from '../motion-primitives/in-view';
 
 import type { IProjectCollection } from "../../content.config";
 
@@ -29,18 +28,9 @@ function FeatureCard_StretchTwo({ tag, title, idx, children }: IFeatureCardProps
         <Typography variant="h4" color="blue-gray" className="mb-2">
           {title}
         </Typography>
-          <InView
-            variants={{
-              hidden: { opacity: 0, y: 100, filter: 'blur(4px)' },
-              visible: { opacity: 1, y: 0, filter: 'blur(0px)' },
-            }}
-            viewOptions={{ margin: '0px 0px -100px 0px' }}
-            transition={{ duration: 0.4, ease: 'easeInOut' }}
-          >
-          <Typography variant="paragraph" className="!text-gray-600 text-lg">
-            {children}
-          </Typography>
-        </InView>
+        <Typography variant="paragraph" className="!text-gray-600 text-lg">
+          {children}
+        </Typography>
       </CardBody>
     </Card>
   );
@@ -50,7 +40,7 @@ export function FeatureChallengeRoleSection({...props}: IProjectCollection) {
   const project = props.project;
   const challengeTag = "The Challenge";
   const roleTag = "Role and Tech";
-  const backgroundGradient = "bg-gradient-to-t from-gray-50 to-gray-50/10"
+  const backgroundGradient = "bg-gradient-to-t from-blue-gray-50/40 to-blue-gray-50/30"
   return (
     <section className={"lg:py-10 py-4 px-8 lg:px-20 mx-auto " + backgroundGradient}>
       <div className="container mx-auto grid lg:gap-x-8 gap-y-8 grid-cols-1 lg:grid-cols-3">
@@ -65,7 +55,6 @@ export function FeatureChallengeRoleSection({...props}: IProjectCollection) {
           </>
         }
       </div>
-
     </section>
   );
 }

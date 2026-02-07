@@ -16,12 +16,12 @@ function ProjectCard({...props} : IProjectCollection) {
   const imgClass = "h-full w-full object-contain object-top border-2 border-gray-100";
   return (
     <a href={baseURL + project.link}>
-      <Card color="transparent" shadow={true} className="mt-6 hover:shadow-lg hover:shadow-accent-800/20 transition-colors">
+      <Card color="transparent" shadow={true} className="mt-6 hover:bg-accent-100/20 hover:shadow-lg hover:shadow-accent-800/20 duration-500 transition-colors">
         <CardHeader floated={true} className="h-70 w-70 relative">
-          <img src={baseURL + project.featureimg} alt={project.title} className="h-64 w-full object-cover object-top border-t-2 border-gray-50 hover:scale-105 transition-transform"/>
+          <img src={baseURL + project.featureimg} alt={project.title} className="h-64 w-full object-cover object-top border-t-2 border-gray-50 hover:scale-105 delay-150 duration-500 transition-transform"/>
         </CardHeader>
         <CardBody>
-          <Typography variant="h5" color="blue-gray-900" className="transition-colors hover:text-accent-500">
+          <Typography variant="h5" color="blue-gray" className="transition-colors hover:text-accent-500">
             {project.title}
           </Typography>
           <Typography color="blue-gray" className="mb-6 font-normal text-blue-gray-400">
@@ -60,29 +60,37 @@ export function FeaturedProjectsSection({...props}: CollectionEntry<'project'>[]
           <Typography variant="h2" color="blue-gray" className="mb-4">
             Solving business problems, improving UIX
           </Typography>
-          <InView
+          <Typography
+            variant="lead"
+            className="mx-auto w-full px-4 text-blue-gray-800 md:w-10/12 lg:w-9/12 lg:px-8"
+          >
+            Specializing in building websites and converting complex workflows into <span className="font-bold">intuitive interfaces
+            that drive measurable results</span> - from increasing conversions and onboarding to streamlined 
+            enterprise processes serving many users.
+          </Typography>
+
+          <Typography
+            variant="lead"
+            className="mx-auto lg:w-9/12 lg:px-20 text-blue-gray-800"
+          >
+            Need a new website or optimise the one you have? I&apos;m here to bring your ideas to life. See the diversity of work 
+            delivered in problem-solution-impact scenarios in these projects below.
+          </Typography>
+        </div>
+        <InView
             variants={{
-              hidden: { opacity: 0, y: 100, filter: 'blur(4px)' },
+              hidden: { opacity: 0, y: 70, filter: 'blur(4px)' },
               visible: { opacity: 1, y: 0, filter: 'blur(0px)' },
             }}
-            viewOptions={{ margin: '0px 0px -100px 0px' }}
-            transition={{ duration: 0.4, ease: 'easeInOut' }}
+            viewOptions={{ margin: '0px 0px -70px 0px' }}
+            transition={{ duration: 0.5, ease: 'easeInOut' }}
           >
-            <Typography
-              variant="lead"
-              className="mx-auto lg:w-8/12 lg:px-20 text-blue-gray-800"
-            >
-              Need a new website or product built or optimise and/or convert the one you have? Want to revamp the customer journey for your online business?
-              <br/>I&apos;m here to bring your ideas to life. See the diversity of work 
-              delivered in problem-solution-impact scenarios in a few projects below.
-            </Typography>
-          </InView>
-        </div>
-        <div className="grid gap-10 grid-cols-1 md:grid-cols-2 md:mx-10 lg:mx-20 items-stretch items-center">
-          {projects.map((props, key) => (
-            <ProjectCard key={props.id} project={props.data} />
-          ))}
-        </div>
+          <div className="grid gap-10 grid-cols-1 md:grid-cols-2 md:mx-10 lg:mx-20 items-stretch items-center">
+            {projects.map((props, key) => (
+              <ProjectCard key={props.id} project={props.data} />
+            ))}
+          </div>
+        </InView>
       </div>
     </section>
   );

@@ -6,7 +6,6 @@ import {
   CardHeader,
   Typography,
 } from "@material-tailwind/react";
-import { InView } from '../motion-primitives/in-view';
 import type { ISolutionProps } from "../../content.config";
 
 const baseURL = import.meta.env.BASE_URL || "/portfolio";
@@ -18,30 +17,21 @@ export function FeatureSolutionSection(solutionProps: ISolutionProps, islast: bo
   const [galleryActiveIndex, setGalleryActiveIndex] = React.useState(defaultImageSrcIndex);
   return (
     <>
-      <a id={link} className="h-20 lg:h-60"></a>
-        <section className="lg:pt-12 lg:pb-5 py-4 px-8 lg:px-20 mx-auto ">
-          <div className="mb-10 container mx-auto grid lg:gap-x-8 gap-y-4 grid-cols-1 md:grid-cols-2">
-            <div className="col-span-1 md:col-span-2 text-center mb-4">
+      <a id={link}></a>
+        <section className="lg:pb-5 py-8 px-8 lg:px-20 mx-auto ">
+          <div className="mb-10 container mx-auto grid lg:gap-x-8 gap-y-4 grid-cols-1 lg:grid-cols-2">
+            <div className="col-span-1 lg:col-span-2 text-center mb-4">
               <Typography variant="h6"
                 className="text-accent uppercase"
               >
                 {tag}
               </Typography>
-              <InView
-                variants={{
-                  hidden: { opacity: 0, y: 100, filter: 'blur(4px)' },
-                  visible: { opacity: 1, y: 0, filter: 'blur(0px)' },
-                }}
-                viewOptions={{ margin: '0px 0px -100px 0px' }}
-                transition={{ duration: 0.4, ease: 'easeInOut' }}
-              >                    
-                <Typography variant="h4"
-                  color="blue-gray"
-                  className=""
-                >
-                  {title}
-                </Typography>
-              </InView>
+              <Typography variant="h4"
+                color="blue-gray"
+                className=""
+              >
+                {title}
+              </Typography>
             </div>
             <Card className="grid col-span-1" color="transparent" shadow={false}>
               <CardBody className="p-0">
@@ -64,7 +54,7 @@ export function FeatureSolutionSection(solutionProps: ISolutionProps, islast: bo
                 </Typography>
               </CardBody>
             </Card>
-            <Card className="grid col-span-1 lg:border-l-2 lg:border-blue-gray-50 rounded-none pl-6" color="transparent" shadow={false}>
+            <Card className="grid col-span-1 lg:border-l-2 lg:border-blue-gray-50 rounded-none lg:pl-6" color="transparent" shadow={false}>
               <CardBody className="p-0">
                 <Typography variant="h6" className="text-lg mb-2 text-accent">
                   Impact
@@ -87,7 +77,7 @@ export function FeatureSolutionSection(solutionProps: ISolutionProps, islast: bo
           </div>
           <div className="flex w-full justify-items-center mt-12">
             <div className="container mx-auto grid lg:gap-x-8 gap-y-8 grid-cols-1 justify-items-center">
-              <div className={"col-span-1 lg:col-span-2 " + (isLast ? "" : " pt-8 border-b border-gray")}>
+              <div className={"col-span-1  " + (isLast ? "" : " pt-8 border-b border-gray")}>
                 <div className="grid gap-4">
                   <div className="text-center justify-items-center mb-0">
                     <div className="justify-center justify-items-center mb-0 md:w-[930px] lg:w-max-[1200px]">
