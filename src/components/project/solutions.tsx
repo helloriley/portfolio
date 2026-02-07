@@ -27,19 +27,30 @@ export function ProjectSolutions({...props}: IProjectCollection) {
           Adding value by optimising workflows and refining the customer experience at <span className="font-bold">{project.company}</span>.
         </Typography>
       </div>
-      <div className="container mx-auto justify-center items-center lg:gap-y-10">
-          <div className="flex justify-center items-center">          
-              <ButtonGroup variant="outlined" className="justify-center">
-              {project.solutions.map(({ title, link }) => (
-                  <Button key={link} variant="outlined" className="items-center hover:shadow-lg hover:text-accent hover:border-accent-500 transition-colors" >
-                    <a href={baseURL + project.link + "/#" + link}>{title}</a>
-                  </Button>
-              ))}
-            </ButtonGroup>
+      {/* Solution navigation buttons */
+        project.solutions.length > 1 && (
+          <div className="container mx-auto justify-center items-center lg:gap-y-10">
+              <div className="flex justify-center items-center mb-10">          
+                  {project.solutions.map(({ title, link }) => (
+                    <a href={baseURL + project.link + "/#" + link}>
+                      <Button key={link} variant="outlined" className="mr-4 items-center hover:shadow-lg hover:text-accent hover:border-accent-500 transition-colors" >
+                        {title}
+                      </Button>
+                    </a>
+                  ))}
+              </div>
           </div>
-      </div>
+        )
+      }
       {project.solutions.map((solution, index) => (
-        <Solution key={solution.link} {...solution} islast={index + 1 == project.solutions.length} />
+        <React.Fragment key={solution.link}>
+          <Solution {...solution} islast={index + 1 === project.solutions.length} />
+          {project.solutions.length > 1 && index + 1 !== project.solutions.length && (
+            <div className="container mx-auto my-10">
+              <hr className="border-blue-gray-200" />
+            </div>
+          )}
+        </React.Fragment>
       ))}
     </section>
   );

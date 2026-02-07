@@ -3,9 +3,10 @@ import {
   Navbar,
   Collapse,
   Typography,
-  Button
+  Button,
+  IconButton
 } from "@material-tailwind/react";
-
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 const baseURL = import.meta.env.BASE_URL || "/portfolio";
 interface NavItemPropsType {
   label: string;
@@ -24,7 +25,7 @@ function NavItem({ label, linkRef }: NavItemPropsType) {
 
 function NavList() {
   return (
-    <ul className="mb-4 mt-2 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-8">
+    <ul className="flex flex-col gap-3 md:mb-0 md:mt-0 md:flex-row md:items-center md:gap-8">
       <NavItem label="Home" linkRef={baseURL + "/"} />
       <NavItem label="About" linkRef={baseURL + "/#about"}/>
       <NavItem label="Projects" linkRef={baseURL + "/#projects"}/>
@@ -33,21 +34,25 @@ function NavList() {
 }
 
 export function NavbarBlurred() {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen((cur) => !cur);
+  const [openNav, setOpenNav] = React.useState(false);
+  const handleOpen = () => setOpenNav((cur) => !cur);
+
+  const handleWindowResize = () =>
+    window.innerWidth >= 960 && setOpenNav(false);
 
   React.useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 960 && setOpen(false),
-    );
+    window.addEventListener("resize", handleWindowResize);
+ 
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
   }, []);
 
   return (
       <Navbar 
         blurred
         color="white"
-        className="sticky inset-0 z-10 mx-auto max-w-screen-2xl p-2 lg:pl-6 mt-4 transition-shadow border-b border-slate-300 shadow-none">
+        className="sticky inset-0 z-10 mx-auto max-w-screen-2xl p-2 md:pl-6 mt-4 transition-shadow border-b border-blue-gray-50 shadow-none">
         <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"
@@ -57,20 +62,32 @@ export function NavbarBlurred() {
           >
             MRiley Portfolio
           </Typography>
-          <div className="hidden lg:flex ml-auto mr-8">
+          <div className="hidden md:flex ml-auto mr-8">
             <NavList />
+            <a href={baseURL + "/#contact"}>
+              <Button
+                  color="gray"
+                  size="sm"
+                  className="hidden md:inline-block ml-8 hover:bg-accent-500 transition-colors"
+              >
+                  Contact
+              </Button>
+            </a>
           </div>
-          <a href={baseURL + "/#contact"}>
-            <Button
-                color="gray"
-                size="sm"
-                className="hidden lg:inline-block hover:bg-accent-500 transition-colors"
+          <IconButton
+            variant="text"
+            className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent md:hidden"
+            ripple={false}
+            onClick={() => setOpenNav(!openNav)}
             >
-                Contact
-            </Button>
-          </a>
+              {openNav ? (
+                <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+              ) : (
+                <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+              )}
+          </IconButton>
         </div>
-        <Collapse open={open}>
+        <Collapse open={openNav}>
           <NavList />
           <a href={baseURL + "/#contact"}>
             <Button size="sm" className="mb-2 hover:bg-accent-500 transition-colors" fullWidth>
