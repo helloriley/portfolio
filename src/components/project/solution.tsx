@@ -9,6 +9,14 @@ import {
 import type { ISolutionProps } from "../../content.config";
 
 const baseURL = import.meta.env.BASE_URL || "/portfolio";
+/**
+ * 
+<Typography variant="h6"
+                className="text-accent uppercase"
+              >
+                {tag}
+              </Typography>
+*/
 
 export function FeatureSolutionSection(solutionProps: ISolutionProps, islast: boolean,) {
   const { title, tag, link, problem, solution, solutionbullets, impact, impactbullets, gallery } = solutionProps;
@@ -21,11 +29,6 @@ export function FeatureSolutionSection(solutionProps: ISolutionProps, islast: bo
         <section className="lg:pb-5 py-8 px-8 lg:px-20 mx-auto ">
           <div className="mb-10 container mx-auto grid lg:gap-x-8 gap-y-4 grid-cols-1 lg:grid-cols-2">
             <div className="col-span-1 lg:col-span-2 text-center mb-4">
-              <Typography variant="h6"
-                className="text-accent uppercase"
-              >
-                {tag}
-              </Typography>
               <Typography variant="h4"
                 color="blue-gray"
                 className=""
@@ -35,13 +38,13 @@ export function FeatureSolutionSection(solutionProps: ISolutionProps, islast: bo
             </div>
             <Card className="grid col-span-1" color="transparent" shadow={false}>
               <CardBody className="p-0">
-                <Typography variant="h6" className="text-lg mb-2 text-accent">
+                <Typography variant="h6" className="mb-2 text-accent uppercase">
                   Problem
                 </Typography>
                 <Typography variant="paragraph" color="blue-gray" className="text-lg !text-gray-600 mb-2">
                   {problem}
                 </Typography>
-                <Typography variant="h6" className="text-lg mb-2 text-accent">
+                <Typography variant="h6" className="mb-2 text-accent uppercase">
                   Solution
                 </Typography>
                 <Typography variant="paragraph" color="blue-gray" className="text-lg !text-gray-600">
@@ -56,7 +59,7 @@ export function FeatureSolutionSection(solutionProps: ISolutionProps, islast: bo
             </Card>
             <Card className="grid col-span-1 lg:border-l-2 lg:border-blue-gray-50 rounded-none lg:pl-6" color="transparent" shadow={false}>
               <CardBody className="p-0">
-                <Typography variant="h6" className="text-lg mb-2 text-accent">
+                <Typography variant="h6" className="mb-2 text-accent uppercase">
                   Impact
                 </Typography>
                 <Typography variant="paragraph" color="blue-gray" className="text-lg !text-gray-600 mb-2">

@@ -52,42 +52,42 @@
         {
           "src": "/images/inspec-pmo-projects-tree-with-flags-1346x700.jpg",
           "alt": "Redesigned Delivery Management System",
-          "caption": "Redesigned and rebranded an Enterprise-level Delivery Management System"
+          "caption": "AFTER - Redesigned and rebranded an Enterprise-level Delivery Management System"
         },
         {
           "src": "/images/inspec-old-project-task-1452x770.jpg",
           "alt": "Old Project Tasks Treeview and menu options view",
-          "caption": "Old Project Tasks Treeview and menu options view (not my work)"
+          "caption": "BEFORE - Old Project Tasks Treeview and menu options view (not my work)"
         },
         {
           "src": "/images/inspec-pmo-my-tasks-1524x770.jpg",
           "alt": "Redesigned Project Managers Tasks Treeview and menu options view",
-          "caption": "Redesigned Project Manager's Tasks. Showing Treeview of tasks and Task menu/actions, filtered by Project (dropdown)."
+          "caption": "AFTER - Redesigned Project Manager's Tasks. Showing Treeview of tasks and Task menu/actions, filtered by Project (dropdown)."
         },
         {
           "src": "/images/inspec-old-project-milestone-1674x770.jpg",
           "alt": "Old Project Milestones Treeview and menu options view",
-          "caption": "Old Project Milestones Treeview and menu options view (not my work)"
+          "caption": "BEFORE - Old Project Milestones Treeview and menu options view (not my work)"
         },
         {
           "src": "/images/inspec-old-login-1265x770.jpg",
           "alt": "Old Login screen",
-          "caption": "Old Login screen (not my work)"
+          "caption": "BEFORE - Old Login screen (not my work)"
         },
         {
           "src": "/images/inspec-new-login-1334x770.jpg",
           "alt": "Rebranded Login screen",
-          "caption": "Updated and rebranded Login screen"
+          "caption": "AFTER - Updated and rebranded Login screen"
         },
         {
           "src": "/images/inspec-pmo-manage-users-roles-1504x770.jpg",
           "alt": "Project Managers manage Users and User Roles",
-          "caption": "Project Manager's popup for managing User Roles and Permissions"
+          "caption": "AFTER - Project Manager's popup for managing User Roles and Permissions"
         },
         {
           "src": "/images/inspec-my-tasks-kanban-status-report-1504x770.png",
           "alt": "Project Manager's popup to update their task's status report",
-          "caption": "Project Manager's popup to update their task's status report, overlayed on their tasks displayed as a kanban board"
+          "caption": "AFTER - Project Manager's popup to update their task's status report, overlayed on their tasks displayed as a kanban board"
         }
       ]
     },
@@ -117,12 +117,12 @@
         {
           "src": "/images/inspec-pmo-projects-tree-with-flags-outlined-1483x770.png",
           "alt": "Redesigned Delivery Management System Treeviews",
-          "caption": "Visual indicators for child nodes, issues, reminders, documents and attachments in the Project Treeview."
+          "caption": "AFTER - Visual indicators for child nodes, issues, reminders, documents and attachments in the Project Treeview."
         },
         {
           "src": "/images/inspec-old-pmo-projects-treeview-1688x770.png",
           "alt": "Redesigned Delivery Management System Treeviews",
-          "caption": "Old PMO Projects Treeview showing an opened Task with no subtask, along with other unopened Milestones - with no idea if they have child nodes (tasks, subtasks) or Issues, Reminders, Documents and Attachments, leading to empty clicks and significant frustration."
+          "caption": "BEFORE - Old PMO Projects Treeview showing an opened Task with no subtask, along with other unopened Milestones - with no idea if they have child nodes (tasks, subtasks) or Issues, Reminders, Documents and Attachments, leading to empty clicks and significant frustration."
         }
 
       ]
