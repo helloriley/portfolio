@@ -49,12 +49,12 @@
         {
           "src": "/images/hospital-ward-chart-1375x770.jpg",
           "alt": "Designed and implemented Hospital Ward Management System",
-          "caption": "New Ward Chart touch screen showing optimised navigation and clean layout. UI designed for touch interaction. Core Patient Details displayed at the top. Categorised treatment tabs with relevant template cards and treatment grid below."
+          "caption": "NEW - Ward Chart touch screen showing optimised navigation and clean layout. UI designed for touch interaction. Core Patient Details displayed at the top. Categorised treatment tabs with relevant template cards and treatment grid below."
         },
         {
           "src": "/images/hospital-ward-chart-confirmation-1368x770.jpg",
           "alt": "Designed and implemented Hospital Ward Management System",
-          "caption": "New Ward Chart Confirmation modal to reduce accidental treatment assignments"
+          "caption": "NEW - Ward Chart Confirmation modal to reduce accidental treatment assignments"
         }
       ]
     },
@@ -83,12 +83,12 @@
         {
           "src": "/images/hospital-ward-patient-details-new-1371x770.jpg",
           "alt": "Hospital Ward Management System",
-          "caption": "Redesigned and optimised the Patient details screen to be cleaner and more simple to use, with key information prioritised and easy access to common actions."
+          "caption": "AFTER - Redesigned and optimised the Patient details screen to be cleaner and more simple to use, with key information prioritised and easy access to common actions."
         },
         {
           "src": "/images/hospital-ward-patient-details-old-1350x770.jpg",
           "alt": "Hospital Ward Management System",
-          "caption": "Old Patient details screen (not my work)"
+          "caption": "BEFORE - Old Patient details screen (not my work)"
         }
 
       ]

@@ -17,8 +17,7 @@
     [
       "Streamlined wallet-driven funding and purchase process",
       "Significantly reduced reconciliation times and freed up core team resources",
-      "Improved onboarding process and conversions with an integrated step process and state-aware Buy buttons",
-      "Enhanced the Buy page, Dashboard, Projects, How it Works and Project cards to improve user experience and conversions"
+      "Improved onboarding process and conversions with an integrated step process and state-aware Buy buttons"
     ],
     "src" : "/images/banner-sunexchange-936x646.jpg",
     "alt" : "Solar Panels at Sunset",
@@ -35,6 +34,7 @@
       "solutionbullets": 
       [
         "Dashboard Wallet updates to prefund before purchasing, with currency conversion",
+        "Introduce a progressive funding workflow with clear motivation and guidance to fund wallets before purchasing solar cells",
         "New Add funds functionality, accessible throughout the platform",
         "Redesigned a clean and simple Buy page"
       ],
@@ -50,32 +50,32 @@
         {
           "src": "/images/sunexchange-new-buy-page-1070x770.jpg",
           "alt": "Redesigned Buy Page with Wallet-only Payment Flow",
-          "caption": "Redesigned Buy Page with simple Wallet-only payment flow, improving user experience, streamlining purchases and significantly reducing reconcilation time. Quick access to Add Funds. Auto calculates of 'cell budget' based on wallet balances."
+          "caption": "AFTER - Redesigned Buy Page with simple Wallet-only payment flow, improving user experience, streamlining purchases and significantly reducing reconcilation time. Quick access to Add Funds. Auto calculates of 'cell budget' based on wallet balances."
         },
         {
           "src": "/images/sunexchange-old-buy-page-885x770.jpg",
           "alt": "Previous Buy Page",
-          "caption": "Previous Buy page (not my work) showing busy layout and multi-pay options"
+          "caption": "BEFORE - Previous Buy page (not my work) showing busy layout and multi-pay options"
         },
         {
           "src": "/images/sunexchange-new-add-funds-modal-1184x770.jpg",
           "alt": "New Add Funds accessible throughout the platform",
-          "caption": "New Add Funds functionality accessible throughout the platform. Users could now prefund their Wallets via Credit Card, Bank Transfer or Crypto (BTC) before purchasing solar cells."
+          "caption": "NEW - Add Funds functionality accessible throughout the platform. Users now able to prefund their Wallets via Credit Card, Bank Transfer or Crypto (BTC) before purchasing solar cells."
         },
         {
           "src": "/images/sunexchange-new-dashboard-1301x770.jpg",
           "alt": "Dashboard Wallet with Currency Conversion",
-          "caption": "Updated Dashboard Wallet section with Add Funds and moved info for Cashing out to it's own tab. Also included Currency Conversion on dashboard for users to see ZAR and BTC in USD, EUR or GBP."
+          "caption": "AFTER - Updated Dashboard Wallet section with Add Funds and moved info for Cashing out to it's own tab. Also included Currency Conversion on dashboard for users to see ZAR and BTC in USD, EUR or GBP."
         },
         {
           "src": "/images/sunexchange-project-coming-soon-wallet-only-zoom-1197x770.jpg",
           "alt": "Updated Coming Soon Projects to show wallet balance with reason to call to action",
-          "caption": "Updated 'Coming Soon' Projects to show wallet balance with motivation and call to action (zoomed-in)"
+          "caption": "NEW - Updated 'Coming Soon' Projects to show wallet balance with motivation and call to action (zoomed-in)"
         },
         {
           "src": "/images/sunexchange-wallet-work-flow-updates-1361x770.jpg",
           "alt": "Mapping new Wallet-only Add Funds flow",
-          "caption": "Mapping new Wallet-only Add Funds flow"
+          "caption": "NEW - Mapping new Wallet-only Add Funds flow"
         }
 
       ]
@@ -104,27 +104,27 @@
         {
           "src": "/images/sunexchange-new-dashboard-my-profile-uncompleted-1060x770.jpg",
           "alt": "New Dashboard Onboarding Stepper with Contextual Guidance",
-          "caption": "New Dashboard Onboarding Stepper with contextual guidance for users. Dashboard state showing New user with no cells. When Profile is incomplete, Dashboard auto focuses the Profile tab. Clear motivation in the Wallet section to fund wallets to buy solar cells."
+          "caption": "NEW - Dashboard Onboarding Stepper with contextual guidance for users. Dashboard showing new-user-no-cells state. When Profile is incomplete, Dashboard auto focuses the Profile tab. Clear motivation in the Wallet section to fund wallets to buy solar cells."
         },
         {
           "src": "/images/sunexchange-old-dashboard-overview-new-user-1345x770.jpg",
           "alt": "Old Dashboard overview new user",
-          "caption": "Old Dashboard overview (not my work) - New user no cells. Statements of missing parts instead of motivation why they would want to with guidance on what to do next."
+          "caption": "BEFORE - Old Dashboard overview (not my work) showing new-user-no-cells state. Statements highlight missing parts instead of motivation and/or guidance to progress."
         },
         {
           "src": "/images/sunexchange-new-dashboard-overview-new-user-no-cells-1302x770.jpg",
           "alt": "New Dashboard overview new user no cells pre Onboarding updates",
-          "caption": "New Dashboard overview - New user no cells (pre Onboarding updates). Showing improved contextual guidance and motivation to fund and buy cells."
+          "caption": "AFTER - Dashboard overview showing new-user-no-cells state (pre Onboarding updates). Showing improved contextual guidance and motivation to fund and buy cells."
         },
         {
           "src": "/images/sunexchange-incomplete-onboarding-buy-button-1762x770.jpg",
           "alt": "Incomplete onboarding showing updated Add Funds and Buy buttons and Dashboard Profile tab highlighted.",
-          "caption": "An incomplete Onboarding state filters through to update the text and action on the Add Funds and Buy buttons. In this state, these core buttons redirect to the Dashboard Profile tab. The Dashboard Profile tab is highlighted and focused in an incomplete profile state, encouraging the user to proceed with the next steps."
+          "caption": "AFTER - An incomplete Onboarding state filters through to update the text and action on the Add Funds and Buy buttons. In this state, these core buttons redirect to the Dashboard Profile tab. The Dashboard Profile tab is highlighted and focused in an incomplete profile state, encouraging the user to proceed with the next steps."
         },
         {
           "src": "/images/sunexchange-flow-mapping-for-onboarding-updates-1870x770.jpg",
           "alt": "Journey and Workflow mapping to identify and resolve friction points during Onboarding",
-          "caption": "Snapshot of part of the journey and Workflow mapping to identify and resolve friction points during Onboarding."
+          "caption": "NEW - Snapshot of part of the journey and Workflow mapping to identify and resolve friction points during Onboarding."
         }
 
       ]
@@ -139,7 +139,8 @@
       [
         "Boost user confidence by improving trust and conversion through project transparency",
         "Highlight ongoing impact benefits of investments",
-        "Incorporate social proof elements"
+        "Incorporate social proof elements",
+        "Enhanced the Buy page, Dashboard, Projects, How it Works and Project cards to improve user experience and conversions"
       ],
       "impact": "",
       "impactbullets": 
@@ -153,42 +154,42 @@
         {
           "src": "/images/sunexchange-earnings-estimator-vs-key-facts-1368x770.jpg",
           "alt": "Converted Key Facts on a Project page with the Earnings Estimator which allowed users to calculate their spend and impact, in their currency (showing ZAR)",
-          "caption": "Project page Key Facts (left, not my work) converted to a functional Earnings Estimator (right) allowing users to calculate their spend, impact and income earnings in their currency: USD, EUR, GBP and ZAR (showing ZAR)"
+          "caption": "BEFORE/AFTER - Project page Key Facts (left, not my work) converted to a functional Earnings Estimator (right) allowing users to calculate their spend, impact and income earnings in their currency: USD, EUR, GBP and ZAR (showing ZAR)"
         },
         {
           "src": "/images/sunexchange-project-panel-coming-soon-versions-1366x770.jpg",
           "alt": "Project panel for Coming Soon User states",
-          "caption": "'Coming Soon' Project panel showing: Old (left, not my work), New for Visitor (mid), New for Signed in (right). The Earnings Estimator calculator adds transparency of solar cell spend, impact and earnings. Motivation and guidance added to improve User sign ups and wallet funding for next project state."
+          "caption": "BEFORE/AFTER - 'Coming Soon' Project panel showing: Old (left, not my work), New for Visitor (mid), New for Signed in (right). The Earnings Estimator calculator adds transparency of solar cell spend, impact and earnings. Motivation and guidance added to improve User sign ups and wallet funding for next project state."
         },
         {
           "src": "/images/sunexchange-project-available-cards-panel-1366x770.jpg",
           "alt": "Project card and panel for Available state",
-          "caption": "'Available' Project card and panel showing: Old (not my work) vs New. Improved transparency of solar cell spend, impact and earnings to attract like-minded users with an interest in impact and longer-term outlook, in line with the product offering."
+          "caption": "BEFORE/AFTER - 'Available' Project card and panel showing: Old (not my work) vs New. Improved transparency of solar cell spend, impact and earnings to attract like-minded users with an interest in impact and longer-term outlook, in line with the product offering."
         },
         {
           "src": "/images/sunexchange-projects-generating-cards-panel-1366x770.jpg",
           "alt": "Project card and panel for Generating state",
-          "caption": "'Generating' Project card and panel showing: Old (not my work) vs New panel. Visitors will want to verify legitimacy before signing up and starting to purchase and make an impact, and will check the projects already generating. Over time there will be more projects in this state, therefore it was important to highlight energy generated, impact made and solar cell owners in projects to boost social proof and trust in purchases. (See upcoming card updates)"
+          "caption": "BEFORE/AFTER - 'Generating' Project card and panel showing: Old (not my work) vs New panel. Visitors will want to verify legitimacy before signing up and starting to purchase and make an impact, and will check the projects already generating. Over time there will be more projects in this state, therefore it was important to highlight energy generated, impact made and solar cell owners in projects to boost social proof and trust in purchases. (See upcoming card updates)"
         },
         {
           "src": "/images/sunexchange-concept-projects-page-available-1366x770.jpg",
           "alt": "Concept Projects page with updated tab groups, tab information and Available cards",
-          "caption": "'Available' Projects page concept with updated tab groups, specific tab count and motivation with concept 'Available' cards. Aimed to improve trust, sign up and first purchase conversions, and 'normalise' purchasing more solar cells per user."
+          "caption": "CONCEPT - 'Available' Projects page concept with updated tab groups, specific tab count and motivation with concept 'Available' cards. Aimed to improve trust, sign up and first purchase conversions, and 'normalise' purchasing more solar cells per user."
         },
         {
           "src": "/images/sunexchange-concept-projects-page-installing-1366x770.jpg",
           "alt": "Concept Projects page with updated tab groups, tab information and Installing cards",
-          "caption": "'Installing' Projects page concept with updated tab groups, specific tab count and motivation with concept 'Installing' cards. Aimed to improve trust, transparency and better frame this stage for solar cell owners and better manage expectations. "
+          "caption": "CONCEPT - 'Installing' Projects page concept with updated tab groups, specific tab count and motivation with concept 'Installing' cards. Aimed to improve trust, transparency and better frame this stage for solar cell owners and better manage expectations. "
         },
         {
           "src": "/images/sunexchange-concept-projects-page-generating-1366x770.jpg",
           "alt": "Concept Projects page with updated tab groups, tab information and Generating cards",
-          "caption": "'Generating' Projects page concept with updated tab groups, specific tab count and information with concept 'Generating' cards. Aimed to improve trust, transparency and build confidence as more projects are setup and start generating. Visitors will very likely visit this tab specifically to gauge the projects that have already got solar cell owners and how long its been live and generating energy and impact, to influence their decision to sign up and purchase solar cells."
+          "caption": "CONCEPT - 'Generating' Projects page concept with updated tab groups, specific tab count and information with concept 'Generating' cards. Aimed to improve trust, transparency and build confidence as more projects are setup and start generating. Visitors will very likely visit this tab specifically to gauge the projects that have already got solar cell owners and how long its been live and generating energy and impact, to influence their decision to sign up and purchase solar cells."
         },
         {
           "src": "/images/sunexchange-new-footer-1595x770.jpg",
           "alt": "New Footer and Menu grouping",
-          "caption": "New brighter Footer with improved Menu groupings to improve navigation and access to key information, boosting user confidence, trust and product awareness."
+          "caption": "AFTER - New brighter Footer with improved Menu groupings to improve navigation and access to key information, boosting user confidence, trust and product awareness."
         }
 
       ]
