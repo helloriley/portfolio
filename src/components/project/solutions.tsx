@@ -43,17 +43,29 @@ export function ProjectSolutions({...props}: IProjectCollection) {
         )
       }
       {project.solutions.map((solution, index) => (
-        <React.Fragment key={solution.link}>
-          <Solution {...solution} islast={index + 1 === project.solutions.length} />
-          {project.solutions.length > 1 && index + 1 !== project.solutions.length && (
-            <div className="container mx-auto my-10">
+        <>
+          {/* Add a horizontal line between solutions, except before the first one */} 
+          <a id={solution.link}></a>
+          {index > 0 && (
+            <div className="w-2/3 text-center mx-auto my-10">
               <hr className="border-blue-gray-200" />
-            </div>
+            </div> 
           )}
-        </React.Fragment>
+          
+          <Solution {...solution} key={solution.link}/>
+        </>
       ))}
     </section>
   );
 }
 
 export default ProjectSolutions;
+
+/*
+          {project.solutions.length > 1 && index + 1 !== project.solutions.length && (
+            <div className="container mx-auto my-10">
+              <hr className="border-blue-gray-200" />
+            </div>
+          )}
+
+*/
