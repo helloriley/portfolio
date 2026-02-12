@@ -25,7 +25,7 @@ function NavItem({ label, linkRef }: NavItemPropsType) {
 
 function NavList() {
   return (
-    <ul className="flex flex-col gap-3 md:mb-0 md:mt-0 md:flex-row md:items-center md:gap-8">
+    <ul className="flex flex-col gap-3 md:mb-0 md:mt-0 md:flex-row md:items-center md:gap-4">
       <NavItem label="Home" linkRef={baseURL + "/"} />
       <NavItem label="About" linkRef={baseURL + "/#about"}/>
       <NavItem label="Projects" linkRef={baseURL + "/#projects"}/>
