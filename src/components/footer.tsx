@@ -21,7 +21,7 @@ export function Footer() {
               color="blue-gray"
               className="text-base font-medium text-blue-gray-500"
             >
-              Helping you turn ideas into functional, engaging websites and products optimized for performance.
+              Helping you turn ideas into functional, engaging websites and products.
             </Typography>
           </div>
 
