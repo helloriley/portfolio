@@ -31,13 +31,13 @@ export function FeatureSolutionSection(solutionProps: ISolutionProps) {
               <Typography variant="h6" className="mb-2 text-accent uppercase">
                 Problem
               </Typography>
-              <Typography variant="paragraph" color="blue-gray" className="text-lg !text-gray-600 mb-2">
+              <Typography variant="paragraph" color="blue-gray" className="text-lg !text-gray-700 mb-2">
                 {problem}
               </Typography>
               <Typography variant="h6" className="mb-2 text-accent uppercase">
                 Solution
               </Typography>
-              <Typography variant="paragraph" color="blue-gray" className="text-lg !text-gray-600">
+              <Typography variant="paragraph" color="blue-gray" className="text-lg !text-gray-700">
                 {solution}
                 <ul className="list-disc ml-3 mt-3">
                   {solutionbullets.map((bullet, key) => (
@@ -52,13 +52,13 @@ export function FeatureSolutionSection(solutionProps: ISolutionProps) {
               <Typography variant="h6" className="mb-2 text-accent uppercase">
                 Impact
               </Typography>
-              <Typography variant="paragraph" color="blue-gray" className="text-lg !text-gray-600 mb-2">
+              <Typography variant="paragraph" color="blue-gray" className="text-lg !text-gray-700 mb-2">
                   {impact}
                   <ul className="list-disc ml-3">
                     {impactbullets.map((bullet, key) => (
                       <li key={key} className="flex items-start gap-3 text-blue-gray text-lg text-bold mt-2">
-                        <span className="mt-1 flex-shrink-0 w-6 h-6 text-blue-500" aria-hidden>
-                          <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 512 512"><path d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zm0-464a208 208 0 1 0 0 416 208 208 0 1 0 0-416zm70.7 121.9c7.8-10.7 22.8-13.1 33.5-5.3 10.7 7.8 13.1 22.8 5.3 33.5L243.4 366.1c-4.1 5.7-10.5 9.3-17.5 9.8-7 .5-13.9-2-18.8-6.9l-55.9-55.9c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l36 36 105.6-145.2z"/></svg>
+                        <span className="mt-1 flex-shrink-0 w-6 h-6 text-accent" aria-hidden>
+                          <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" className="fill-accent" viewBox="0 0 512 512"><path d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zm0-464a208 208 0 1 0 0 416 208 208 0 1 0 0-416zm70.7 121.9c7.8-10.7 22.8-13.1 33.5-5.3 10.7 7.8 13.1 22.8 5.3 33.5L243.4 366.1c-4.1 5.7-10.5 9.3-17.5 9.8-7 .5-13.9-2-18.8-6.9l-55.9-55.9c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l36 36 105.6-145.2z"/></svg>
                         </span>
                         <span className="text-blue-gray text-lg font-semi-bold">{bullet}</span>
                       </li>
@@ -102,7 +102,7 @@ export function FeatureSolutionSection(solutionProps: ISolutionProps) {
                             />
                           ))}
                         </div>
-                        <Typography variant="paragraph" color="blue-gray" className="text-md p-4 pt-7 mb-0 w-full justify-center text-center bg-accent-50/50 rounded-b-xl">
+                        <Typography variant="paragraph" className="text-md p-4 pt-8 mb-0 w-full justify-center text-center text-blue-gray-900 bg-accent-50/50 rounded-b-xl">
                           {gallery.find((img) => img.src === gallery[galleryActiveIndex]?.src)?.caption}
                         </Typography>
                       </div>

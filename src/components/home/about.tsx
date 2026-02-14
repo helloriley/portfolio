@@ -69,7 +69,7 @@ export function FeatureAbout() {
           className="mx-auto w-full px-4 text-blue-gray-800 md:w-10/12 lg:w-9/12 lg:px-8"
         >
             As a <span className="font-bold">Design Engineer</span> - a hybrid UI/UX Designer &amp; Frontend Developer - I&apos;m passionate about crafting seamless user experiences that <span className="font-bold">bridge user goals and business objectives</span>.
-            Solving business problems through user-centered responsive design and efficient development.          
+            Solving business problems through user-centered responsive design and efficient development for web, online products and platforms.          
         </Typography>
       </div>
       <InView

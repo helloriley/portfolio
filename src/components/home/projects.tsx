@@ -64,7 +64,7 @@ export function FeaturedProjectsSection({...props}: CollectionEntry<'project'>[]
             variant="lead"
             className="mx-auto w-full px-4 text-blue-gray-800 md:w-10/12 lg:w-9/12 lg:px-8"
           >
-            Specializing in building websites and converting complex workflows into <span className="font-bold">intuitive interfaces
+            Specializing in building and converting workflows into <span className="font-bold">intuitive interfaces
             that drive measurable results</span> - from increasing conversions and onboarding to streamlined 
             enterprise processes serving many users.
           </Typography>
@@ -73,8 +73,8 @@ export function FeaturedProjectsSection({...props}: CollectionEntry<'project'>[]
             variant="lead"
             className="mx-auto lg:w-9/12 lg:px-20 text-blue-gray-800"
           >
-            Need a new website or optimise the one you have? I&apos;m here to bring your ideas to life. See the diversity of work 
-            delivered in problem-solution-impact scenarios in these projects below.
+            Need a new website, online product or platform, or optimise the one you have? I&apos;m here to <span className="font-bold">bring your ideas to life</span>. See the diversity of work 
+            delivered with problem-solution-impact scenarios across a few projects:
           </Typography>
         </div>
         <InView

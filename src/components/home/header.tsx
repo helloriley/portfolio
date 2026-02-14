@@ -5,7 +5,6 @@ import {
 } from "@material-tailwind/react";
 
 import { TextEffect } from '../motion-primitives/text-effect';
-import { InView } from "../motion-primitives/in-view";
 
 const baseURL = import.meta.env.BASE_URL || "/portfolio";
 
@@ -32,7 +31,7 @@ export function HeroPresentation() {
           </Typography>
           <Typography variant="lead" color="blue-gray" className="lg:pr-32">
             <TextEffect per='char' preset='fade' delay={0.5}>
-              Where creativity meets functionality. User-centered responsive websites that engage users.
+              Where creativity meets functionality. Helping you build user-focused, engaging websites and products optimized for performance.
             </TextEffect>
           </Typography>
           <div className="mt-12 flex flex-wrap justify-center gap-3 lg:justify-start">
