@@ -22,7 +22,7 @@ export function ProjectSolutions({...props}: IProjectCollection) {
         </Typography>
         <Typography
           variant="paragraph"
-          className="mx-auto max-w-lg !text-gray-600 text-lg"
+          className="mx-auto max-w-lg !text-gray-700 text-lg"
         >
           Adding value by optimising workflows and refining the customer experience at <span className="font-bold">{project.company}</span>.
         </Typography>
@@ -60,12 +60,3 @@ export function ProjectSolutions({...props}: IProjectCollection) {
 }
 
 export default ProjectSolutions;
-
-/*
-          {project.solutions.length > 1 && index + 1 !== project.solutions.length && (
-            <div className="container mx-auto my-10">
-              <hr className="border-blue-gray-200" />
-            </div>
-          )}
-
-*/
