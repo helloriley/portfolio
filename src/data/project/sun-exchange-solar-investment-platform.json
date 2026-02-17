@@ -15,9 +15,10 @@
   {
     "bullets": 
     [
-      "Streamlined wallet-driven funding and purchase process",
-      "Significantly reduced reconciliation times and freed up core team resources",
-      "Improved onboarding process and conversions with an integrated step process and state-aware Buy buttons"
+      "Streamlined pay-by-wallet-only process and user journey leading with zero issues on rollout",
+      "Significantly reduced reconciliation times and customer support around purchases and freed up core team resources",
+      "Improved onboarding process and conversions with an integrated step process and state-aware Buy and Fund buttons",
+      "Enhanced project data transparency and trust with improved project information, social proof and impact highlighting"
     ],
     "src" : "/images/banner-sunexchange-936x646.jpg",
     "alt" : "Solar Panels at Sunset",
@@ -30,20 +31,23 @@
       "tag": "Solution 1",
       "link": "solution1",
       "problem": "Complex multi-payment options created a multi-team reconciliation nightmare.",
-      "solution": "Redesigned wallet-only payment processes with progressive funding workflow and redesigned the Buy page.",
+      "solution": "Redesign pay-with-wallet-only payment processes and user journey, with progressive funding workflow and redesign the Buy page.",
       "solutionbullets": 
       [
-        "Dashboard Wallet updates to prefund before purchasing, with currency conversion",
+        "Update Dashboard Wallet section to promote prefund before purchasing. Include currency conversion displays on wallet balances",
         "Introduce a progressive funding workflow with clear motivation and guidance to fund wallets before purchasing solar cells",
-        "New Add funds functionality, accessible throughout the platform",
-        "Redesigned a clean and simple Buy page"
+        "New Add funds functionality, needs to be accessible throughout the platform, as a core function",
+        "Redesign a clean and simple Buy page aligned with the new wallet-only payment flow. Show 'solar cell budget' for total wallet balance to help users understand how many solar cells they can buy with their wallet balance, and encourage them to buy more cells and make more impact",
+        "Update the 'Coming Soon' project panels to show wallet balance and motivation to fund wallets, with call-to-action, and be able to buy solar cells when projects open up and move to 'Available' state"
       ],
       "impact": "",
       "impactbullets": 
       [
         "Reduced reconciliation time from over 16hrs to under 2hrs weekly, freeing up significant team resources.",
         "Major fullstack code update, Git noted over 10,000 lines of code changed. Single deployment, as per business request, increased the risk around a core business flow.",
-        "Users were up and running immediately. Zero issues or friction raised from both new and existing users in using, understanding and navigating the new functionality."
+        "Users were up and running immediately. Zero issues or friction raised from both new and existing users in using, understanding and navigating the new functionality.",
+        "New Add Funds functionality and wallet-only payment flow has been well received by users, and has encouraged them to prefund their wallets and make more purchases and impact.",
+        "New wallet-only payment flow reduced the complexity of allowing multiple payment options leading to a simpler implementation from a backend services perspective and significant reduction in human-hours around reconciliations and customer support."
       ],
       "gallery": 
       [
@@ -172,9 +176,14 @@
           "caption": "BEFORE/AFTER - 'Generating' Project card and panel showing: Old (not my work) vs New panel. Visitors will want to verify legitimacy before signing up and starting to purchase and make an impact, and will check the projects already generating. Over time there will be more projects in this state, therefore it was important to highlight energy generated, impact made and solar cell owners in projects to boost social proof and trust in purchases. (See upcoming card updates)"
         },
         {
+          "src": "/images/sunexchange-old-concept-projects-page-1366x770.jpg",
+          "alt": "Concept Old Projects page with all project card states.",
+          "caption": "BEFORE - Showing concept of old Project page where all project cards were shown on same page with no user filtering to hone in or option to target messaging per project state. The user has to work harder to 'research' and pull facts out, instead of being able to quickly see key project information and build trust, eg: The total number of projects already generating - a key to converting new users and social proofing the unique impact-value aspect of projects."
+        },
+        {
           "src": "/images/sunexchange-concept-projects-page-available-1366x770.jpg",
           "alt": "Concept Projects page with updated tab groups, tab information and Available cards",
-          "caption": "CONCEPT - 'Available' Projects page concept with updated tab groups, specific tab count and motivation with concept 'Available' cards. Aimed to improve trust, sign up and first purchase conversions, and 'normalise' purchasing more solar cells per user."
+          "caption": "CONCEPT - 'Available' Projects page - tabular grouping showing project count per tab and tab-specific motivation. Concept 'Available' cards introducing progress bar with solar cell owners so far (social proof) and average number of cells bought per person - encouraging / normalising more cells purchased. Aimed to improve trust, sign up and first purchase conversions."
         },
         {
           "src": "/images/sunexchange-concept-projects-page-installing-1366x770.jpg",
