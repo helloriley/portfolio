@@ -5,19 +5,20 @@
   "title": "ESG & Sustainability Website",
   "url": "https://www.helloriley-portfolio.github.io/project/esg-matrix-website",
   "link": "/project/esg-matrix-website",
-  "featureimg": "/images/featurethumb-esgmatrix-1060x631.jpg",
+  "featureimg": "/images/featurethumb-esgmatrix-1060x630.jpg",
   "datecompleted": "2024-12-10",
   "challengetitle": "Design & Develop ESG Matrix Website",
-  "challenge": "Create a user-friendly, visually engaging website that effectively communicates ESG Matrix's value proposition and offerings to a diverse audience, including a Blog section. Simplify the complex landscape of ESG and Sustainability and address the common pain points encountered.",
+  "challenge": "Create a user-friendly, visually engaging website that effectively communicates ESG Matrix's value proposition and offerings to a diverse audience, including a News/Blog section. Simplify the complex landscape of ESG and Sustainability and address the common pain points encountered.",
   "role": "Web Developer & UI/UX Designer",
-  "technologies": "Astro.js, Tailwind CSS, Typescript, Astro content collections (.mdx), Git, GitHub, SEO Optimisation, Vercel",
+  "technologies": "Astro.js, Tailwind CSS, Typescript, Astro content collections (.mdx), Git, GitHub, SEO, Vercel",
   "banner":
   {
     "bullets": 
     [
-      "Promotes ESG & Sustainability services and solutions to a wide audience",
-      "Clearly communicates complex ESG concepts and solutions",
-      "News section shares insights and enhances thought leadership in ESG & Sustainability",
+      "Promotes their value proposition and offerings effectively to a wide audience",
+      "Strategically placed CTAs encourage enquiries and engagement",
+      "Clearly outlines their ESG & Sustainability services and solutions",
+      "News section shares insights and enhances thought leadership in the industry",
       "Increased traffic and lead generation with SEO optimisations and sharing News posts on LinkedIn"
     ],
     "src" : "/images/banner-esgmatrix-936x646.jpg",
@@ -31,82 +32,93 @@
       "tag": "Solution 1",
       "link": "solution1",
       "problem": "The ESG and Sustainability landscape is complex with a wide scope across industries. ESG Matrix needed a website that effectively communicates their value proposition and offerings.",
-      "solution": "Client needs a clear, engaging website that communicates ESG and Sustainability concepts simply and highlights their services effectively. Include a Blog section to share insights and thought leadership in ESG and Sustainability.",
+      "solution": "Client needs a clear, engaging website that communicates ESG and Sustainability concepts simply and highlights their services effectively. Include a News/Blog section to share insights and thought leadership in ESG and Sustainability.",
       "solutionbullets": 
       [
-        "Website communicates the client's value proposition and offerings",
-        "Content is clear and engaging to attract and retain visitors",
-        "Blog/News section provides valuable insights and thought leadership in ESG and Sustainability, attracting a wider audience and establishing ESG Matrix as a trusted resource in the industry"
+        "Website needs to communicate the client's value proposition and offerings, simply and clearly, to a wide audience",
+        "Content needs to be clear and engaging to attract and retain visitors",
+        "CTAs should be strategically placed to encourage enquiries and engagement",
+        "News/Blog section needs to provides valuable insights and thought leadership in ESG and Sustainability, attracting a wider audience and establishing ESG Matrix as a trusted resource in the industry"
       ],
       "impact": "",
       "impactbullets": 
       [
         "Content-rich website attracts and retains visitors",
-        "SEO Optimisations boost traffic and visibility",
+        "SEO Optimisations boosted traffic and visibility",
         "News articles increased traffic, engagement and time spent on site and helped with lead generation via LinkedIn posts",
-        "Clear communication of ESG concepts and solutions leads to increased enquiries and client engagement"
+        "Clear communication of ESG concepts and solutions has lead to increased enquiries and client engagement"
       ],
       "gallery": 
       [
         {
-          "src": "/images/esg-matrix-home-1209x770.jpg",
+          "src": "/images/esg-matrix-home-1280x752.jpg",
           "alt": "ESG Matrix trusted ESG and Sustainability partner",
-          "caption": "NEW - ESG Matrix Home above-the-fold section"
+          "caption": "NEW - ESG Matrix Home page, above-the-fold"
         },
         {
           "src": "/images/esg-matrix-aboutus-1080x770.jpg",
           "alt": "ESG Matrix trusted ESG and Sustainability partner ",
-          "caption": "NEW - About Us section"
+          "caption": "NEW - Home About Us section"
         },
         {
-          "src": "/images/esg-matrix-services-1108x770.jpg",
+          "src": "/images/esg-matrix-services-1280x752.jpg",
           "alt": "ESG Matrix trusted ESG and Sustainability partner",
-          "caption": "NEW - Services above-the-fold"
+          "caption": "NEW - Services page, above-the-fold"
         },
         {
-          "src": "/images/esg-matrix-services-data-management-1318x770.jpg",
+          "src": "/images/esg-matrix-services-overview-1280x752.jpg",
           "alt": "ESG Matrix trusted ESG and Sustainability partner",
-          "caption": "NEW - Data Management section"
+          "caption": "NEW - Services page, clean simple overview of core services"
         },
         {
-          "src": "/images/esg-matrix-solutions-1221x770.jpg",
+          "src": "/images/esg-matrix-services-strategy-1280x752.jpg",
           "alt": "ESG Matrix trusted ESG and Sustainability partner",
-          "caption": "NEW - Solutions above-the-fold"
+          "caption": "NEW - Services page, ESG Strategy and Data Management section"
         },
         {
-          "src": "/images/esg-matrix-gig-solutions-1528x770.jpg",
+          "src": "/images/esg-matrix-solutions-1280x752.jpg",
           "alt": "ESG Matrix trusted ESG and Sustainability partner",
-          "caption": "NEW - GIG Solutions section"
+          "caption": "NEW - Solutions page, above-the-fold"
+        },
+        {
+          "src": "/images/esg-matrix-solutions-swiss-1528x770.jpg",
+          "alt": "ESG Matrix trusted ESG and Sustainability partner",
+          "caption": "NEW - Solutions page, interoperable platform with Swiss-based software partner section"
         },
         {
           "src": "/images/esg-matrix-strategy-solutions-1120x770.jpg",
           "alt": "ESG Matrix trusted ESG and Sustainability partner",
-          "caption": "NEW - Strategy & Solutions section"
+          "caption": "NEW - Solutions page, strategy & solutions section"
         },
         {
           "src": "/images/esg-matrix-standards-frameworks-1432x770.jpg",
           "alt": "ESG Matrix trusted ESG and Sustainability partner",
-          "caption": "NEW - Standards & Frameworks section"
+          "caption": "NEW - Solutions page, highlighting broad coverage of Standards & Frameworks handled by the platform"
         },
         {
-          "src": "/images/esg-matrix-latest-news-1102x770.jpg",
+          "src": "/images/esg-matrix-latest-articles-cta-1280x752.jpg",
           "alt": "ESG Matrix trusted ESG and Sustainability partner",
-          "caption": "NEW - Latest News section"
+          "caption": "NEW - Bottom of page section showing the latest News articles and CTA section (above the Footer)"
         },
         {
-          "src": "/images/esg-matrix-news-1085x770.jpg",
+          "src": "/images/esg-matrix-news-1280x752.jpg",
           "alt": "ESG Matrix trusted ESG and Sustainability partner",
-          "caption": "NEW - News above-the-fold"
+          "caption": "NEW - News page, above-the-fold"
         },
         {
-          "src": "/images/esg-matrix-contact-1112x770.jpg",
+          "src": "/images/esg-matrix-contact-1-1280x752.jpg",
           "alt": "ESG Matrix trusted ESG and Sustainability partner",
-          "caption": "NEW - Contact above-the-fold"
+          "caption": "NEW - Contact Page, above-the-fold"
         },
         {
-          "src": "/images/esg-matrix-footer-1895x770.jpg",
+          "src": "/images/esg-matrix-contact-2-1280x752.jpg",
           "alt": "ESG Matrix trusted ESG and Sustainability partner",
-          "caption": "NEW - Footer section"
+          "caption": "NEW - Contact Page, contact details and CTA to book a strategy call or demo of the platform"
+        },
+        {
+          "src": "/images/esg-matrix-footer-1280x752.jpg",
+          "alt": "ESG Matrix trusted ESG and Sustainability partner",
+          "caption": "NEW - Footer section with above-footer CTA, showing a simple, clean design that fits with the overall website aesthetic"
         }
 
       ]
