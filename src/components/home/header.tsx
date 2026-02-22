@@ -44,7 +44,7 @@ export function HeroPresentation() {
         </div>
       </div>      
       <div className="">
-        <img src={baseURL + "/images/banner-home-6-1200x1100.jpg"} alt="components" className="lg:absolute lg:-top-12 right-0 w-full lg:w-1/2 hover:scale-105 delay-150 duration-500 transition-transform object-cover" />
+        <img src={baseURL + "/images/banner-home-6c-1200x1100.jpg"} alt="components" className="lg:absolute lg:-top-12 right-0 w-full lg:w-1/2 hover:scale-105 delay-150 duration-500 transition-transform object-cover" />
       </div>
     </header>
 
